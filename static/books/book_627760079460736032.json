@@ -1,0 +1,36 @@
+{
+  "title": "场景一：小白兔家\n小白兔是一个可爱的小兔子",
+  "story": "场景一：小白兔家\n小白兔是一个可爱的小兔子，它有着雪白的皮毛和一双大大的眼睛。今天，小白兔妈妈告诉它要去森林找食物，于是小白兔高高兴兴地跳着出了家门。\n\n场景二：小白兔迷路了\n小白兔在森林里快乐地觅食，却不小心迷路了。它看着四周的树木和花草都变得陌生了，开始感到害怕。小白兔不知道该怎么办，它开始唤妈妈，但却没有回应。\n\n场景三：遇见小松鼠\n就在小白兔感到绝望的时候，一只调皮的小松鼠出现了。小松鼠告诉小白兔，它知道回家的路。小松鼠带领着小白兔穿过树林、越过小河，终于找到了回家的路。\n\n场景四：回到家\n小白兔终于回到了家，它高兴地跳起来，感谢小松鼠。小白兔妈妈见到小白兔安然归来也很高兴，它们一家团聚在一起，吃着小白兔妈妈亲手做的美味胡萝卜汤，讲着今天的冒险经历。\n\n通过以上故事情节，儿童可以感受到友爱和乐观的精神，同时也学会在困难时要保持勇敢和寻求帮助。整个故事生动有趣，适合3-6岁儿童阅读。",
+  "scenes": [
+    {
+      "text": "场景一：小白兔家\n小白兔是一个可爱的小兔子，它有着雪白的皮毛和一双大大的眼睛。今天，小白兔妈妈告诉它要去森林找食物，于是小白兔高高兴兴地跳着出了家门。",
+      "prompt": "童话风格的插图，可爱温馨，场景一：小白兔家\n小白兔是一个可爱的小兔子，它有着雪白的皮毛和一双大大的眼睛。今天，小白兔妈妈告诉它要去森林找食物，于是小白兔高高兴兴地跳着出了家门。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/39/20250403/8928fb36/209e6890-b1ef-4aa6-8558-e85ced8838c02492213548.png?Expires=1743757735&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=JV0dCg%2FBdQlybkhZ3ZGNYQnh3aQ%3D"
+    },
+    {
+      "text": "场景二：小白兔迷路了\n小白兔在森林里快乐地觅食，却不小心迷路了。它看着四周的树木和花草都变得陌生了，开始感到害怕。小白兔不知道该怎么办，它开始唤妈妈，但却没有回应。",
+      "prompt": "童话风格的插图，可爱温馨，场景二：小白兔迷路了\n小白兔在森林里快乐地觅食，却不小心迷路了。它看着四周的树木和花草都变得陌生了，开始感到害怕。小白兔不知道该怎么办，它开始唤妈妈，但却没有回应。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/f0/20250403/8928fb36/e8243476-5c7b-4532-bf38-558cb819c0be322361239.png?Expires=1743757744&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=LnpqSoYSwaevibF3G5ryoyIBRns%3D"
+    },
+    {
+      "text": "场景三：遇见小松鼠\n就在小白兔感到绝望的时候，一只调皮的小松鼠出现了。小松鼠告诉小白兔，它知道回家的路。小松鼠带领着小白兔穿过树林、越过小河，终于找到了回家的路。",
+      "prompt": "童话风格的插图，可爱温馨，场景三：遇见小松鼠\n就在小白兔感到绝望的时候，一只调皮的小松鼠出现了。小松鼠告诉小白兔，它知道回家的路。小松鼠带领着小白兔穿过树林、越过小河，终于找到了回家的路。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/5a/20250403/b0fe3396/4ad314e4-93c9-45d3-91e8-dcdd21ad0ed52754956235.png?Expires=1743757754&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=1AOMSyosCe9G8pTmPZY%2BaOIlg04%3D"
+    },
+    {
+      "text": "场景四：回到家\n小白兔终于回到了家，它高兴地跳起来，感谢小松鼠。小白兔妈妈见到小白兔安然归来也很高兴，它们一家团聚在一起，吃着小白兔妈妈亲手做的美味胡萝卜汤，讲着今天的冒险经历。",
+      "prompt": "童话风格的插图，可爱温馨，场景四：回到家\n小白兔终于回到了家，它高兴地跳起来，感谢小松鼠。小白兔妈妈见到小白兔安然归来也很高兴，它们一家团聚在一起，吃着小白兔妈妈亲手做的美味胡萝卜汤，讲着今天的冒险经历。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/52/20250403/8928fb36/0044a72d-3583-41ab-be8d-330693a0b6db2139979813.png?Expires=1743757763&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=HBJ8dwpc5mkG5uDxO2lgyGZJbxQ%3D"
+    },
+    {
+      "text": "通过以上故事情节，儿童可以感受到友爱和乐观的精神，同时也学会在困难时要保持勇敢和寻求帮助。整个故事生动有趣，适合3-6岁儿童阅读。",
+      "prompt": "童话风格的插图，可爱温馨，通过以上故事情节，儿童可以感受到友爱和乐观的精神，同时也学会在困难时要保持勇敢和寻求帮助。整个故事生动有趣，适合3-6岁儿童阅读。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/8a/20250403/8928fb36/212456b5-f017-464e-a04e-720928cc34ea1418841756.png?Expires=1743757772&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=V8hL59ja10bQDwAJTZWtScelmvI%3D"
+    }
+  ]
+}

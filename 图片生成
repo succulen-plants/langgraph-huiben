@@ -1,0 +1,15 @@
+curl -X POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text2image/image-synthesis \
+    -H 'X-DashScope-Async: enable' \
+    -H "Authorization: Bearer $DASHSCOPE_API_KEY" \
+    -H 'Content-Type: application/json' \
+    -d '{
+    "model": "wanx2.1-t2i-turbo",
+    "input": {
+        "prompt": "雪地，白色小教堂，极光，冬日场景，柔和的光线。",
+        "negative_prompt": "人物"
+    },
+    "parameters": {
+        "size": "1024*1024",
+        "n": 1
+    }
+}'

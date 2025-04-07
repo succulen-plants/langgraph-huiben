@@ -1,0 +1,36 @@
+{
+  "title": "场景一：小白兔在森林里玩耍",
+  "story": "场景一：小白兔在森林里玩耍，突然迷路了。\n小白兔跳来跳去，不小心跳进了一片茂密的树林。四周都是高大的树木，小白兔感到非常害怕，不知道该往哪个方向走才能回家。\n\n场景二：小白兔遇到了一只友善的松鼠。\n就在小白兔惊慌失措的时候，一只灰色的松鼠突然出现在她的面前。松鼠问道：\"小兔子，你怎么了？\"小白兔抽泣着说出了自己迷路的事情，松鼠听后表示愿意帮助小白兔找回家的路。\n\n场景三：松鼠带领小白兔找到了一条小溪。\n松鼠领着小白兔沿着一条小溪往上游，小白兔看见了很多美丽的花朵和漂亮的蝴蝶。在溪水的声音中，小白兔感到一丝安慰，仿佛知道自己即将回到家的方向。\n\n场景四：小白兔终于找到了回家的路。\n经过一段时间的跋涉，小白兔终于看见了自己熟悉的小屋。她高兴地跳了起来，感谢松鼠的帮助，最终平安回到了家。\n\n故事结束，小白兔学会了在森林中保持警惕，也明白了友善和帮助的重要性。从此以后，小白兔再也不会迷路了。",
+  "scenes": [
+    {
+      "text": "场景一：小白兔在森林里玩耍，突然迷路了。\n小白兔跳来跳去，不小心跳进了一片茂密的树林。四周都是高大的树木，小白兔感到非常害怕，不知道该往哪个方向走才能回家。",
+      "prompt": "童话风格的插图，可爱温馨，场景一：小白兔在森林里玩耍，突然迷路了。\n小白兔跳来跳去，不小心跳进了一片茂密的树林。四周都是高大的树木，小白兔感到非常害怕，不知道该往哪个方向走才能回家。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/d6/20250403/b0fe3396/be8079de-36b2-414d-9175-c4a6d6b81d4c613021877.png?Expires=1743756947&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=EntYRfVb1YebfSWsIZsqXP7trCU%3D"
+    },
+    {
+      "text": "场景二：小白兔遇到了一只友善的松鼠。\n就在小白兔惊慌失措的时候，一只灰色的松鼠突然出现在她的面前。松鼠问道：\"小兔子，你怎么了？\"小白兔抽泣着说出了自己迷路的事情，松鼠听后表示愿意帮助小白兔找回家的路。",
+      "prompt": "童话风格的插图，可爱温馨，场景二：小白兔遇到了一只友善的松鼠。\n就在小白兔惊慌失措的时候，一只灰色的松鼠突然出现在她的面前。松鼠问道：\"小兔子，你怎么了？\"小白兔抽泣着说出了自己迷路的事情，松鼠听后表示愿意帮助小白兔找回家的路。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/c5/20250403/8928fb36/8059eb99-6384-4ce2-b449-c707fad0ca113469956655.png?Expires=1743756955&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=udGxyE56Dy4oCSSRPio%2FdrXHHho%3D"
+    },
+    {
+      "text": "场景三：松鼠带领小白兔找到了一条小溪。\n松鼠领着小白兔沿着一条小溪往上游，小白兔看见了很多美丽的花朵和漂亮的蝴蝶。在溪水的声音中，小白兔感到一丝安慰，仿佛知道自己即将回到家的方向。",
+      "prompt": "童话风格的插图，可爱温馨，场景三：松鼠带领小白兔找到了一条小溪。\n松鼠领着小白兔沿着一条小溪往上游，小白兔看见了很多美丽的花朵和漂亮的蝴蝶。在溪水的声音中，小白兔感到一丝安慰，仿佛知道自己即将回到家的方向。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/c4/20250403/b0fe3396/033c01b2-9606-4ab5-81b2-a1b6c83e451f1567445715.png?Expires=1743756965&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=yMbbQqf9lgSnR0T7djuAIWLTwaI%3D"
+    },
+    {
+      "text": "场景四：小白兔终于找到了回家的路。\n经过一段时间的跋涉，小白兔终于看见了自己熟悉的小屋。她高兴地跳了起来，感谢松鼠的帮助，最终平安回到了家。",
+      "prompt": "童话风格的插图，可爱温馨，场景四：小白兔终于找到了回家的路。\n经过一段时间的跋涉，小白兔终于看见了自己熟悉的小屋。她高兴地跳了起来，感谢松鼠的帮助，最终平安回到了家。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/ce/20250403/8928fb36/fa232864-682d-481b-b7ee-a63968f7e1cb1890678698.png?Expires=1743756973&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=zz5ihaEXZlznAGwTERWyCyk4nU4%3D"
+    },
+    {
+      "text": "故事结束，小白兔学会了在森林中保持警惕，也明白了友善和帮助的重要性。从此以后，小白兔再也不会迷路了。",
+      "prompt": "童话风格的插图，可爱温馨，故事结束，小白兔学会了在森林中保持警惕，也明白了友善和帮助的重要性。从此以后，小白兔再也不会迷路了。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/76/20250403/b0fe3396/99a123e6-121b-41de-8f68-966cc74b644c13289841.png?Expires=1743756982&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=vhbhnLhl7XVGlE2gwptCNEwr70E%3D"
+    }
+  ]
+}

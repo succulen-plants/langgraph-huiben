@@ -1,0 +1,36 @@
+{
+  "title": "场景一：小兔子花园探险\n小兔子妈妈告诉小兔子",
+  "story": "场景一：小兔子花园探险\n小兔子妈妈告诉小兔子，今天可以去花园探险。小兔子兴奋地蹦蹦跳跳，跑进了花园。花园里有五彩缤纷的花朵和欢快的小鸟，小兔子好奇地四处张望着。\n\n场景二：小兔子迷路了\n小兔子看见了一个好看的小小木屋，就决定去看看。结果，他一不留神就迷路了！他环顾四周，不认识周围的环境，开始有点害怕了。\n\n场景三：友好的小松鼠\n小兔子哭着喊着：“妈妈，我迷路了！”这时，一只友好的小松鼠听见了他的呼喊，走过来说：“不哭，我带你回家！”小兔子高兴极了，跟着小松鼠一起走。\n\n场景四：小兔子找到了家\n小兔子跟着小松鼠穿过树林、跳过小溪，终于找到了家。小兔子妈妈见到他安全归来，抱着他说：“乖孩子，下次再出去玩要注意路哦。”小兔子点点头，觉得自己很幸运有小松鼠帮忙。\n\n故事结束。小兔子学会了需要注意周围的环境，不要随意乱跑，同时也学会了在困难时向别人求助。这是一个关于友爱和团结的温馨故事。",
+  "scenes": [
+    {
+      "text": "场景一：小兔子花园探险\n小兔子妈妈告诉小兔子，今天可以去花园探险。小兔子兴奋地蹦蹦跳跳，跑进了花园。花园里有五彩缤纷的花朵和欢快的小鸟，小兔子好奇地四处张望着。",
+      "prompt": "童话风格的插图，可爱温馨，场景一：小兔子花园探险\n小兔子妈妈告诉小兔子，今天可以去花园探险。小兔子兴奋地蹦蹦跳跳，跑进了花园。花园里有五彩缤纷的花朵和欢快的小鸟，小兔子好奇地四处张望着。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/a8/20250403/8928fb36/72ddf46e-4cac-4f19-bdd3-8c60e8c8b58e727379746.png?Expires=1743755155&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=oeXAkQZH4TNVGGBnPe37lQFSlnU%3D"
+    },
+    {
+      "text": "场景二：小兔子迷路了\n小兔子看见了一个好看的小小木屋，就决定去看看。结果，他一不留神就迷路了！他环顾四周，不认识周围的环境，开始有点害怕了。",
+      "prompt": "童话风格的插图，可爱温馨，场景二：小兔子迷路了\n小兔子看见了一个好看的小小木屋，就决定去看看。结果，他一不留神就迷路了！他环顾四周，不认识周围的环境，开始有点害怕了。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/d3/20250403/8928fb36/2cdaeb52-2599-458b-bbc8-5e9926e2d2d13727153512.png?Expires=1743755165&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=dKFQfO%2F4UxRFLV27OZADTusETCE%3D"
+    },
+    {
+      "text": "场景三：友好的小松鼠\n小兔子哭着喊着：“妈妈，我迷路了！”这时，一只友好的小松鼠听见了他的呼喊，走过来说：“不哭，我带你回家！”小兔子高兴极了，跟着小松鼠一起走。",
+      "prompt": "童话风格的插图，可爱温馨，场景三：友好的小松鼠\n小兔子哭着喊着：“妈妈，我迷路了！”这时，一只友好的小松鼠听见了他的呼喊，走过来说：“不哭，我带你回家！”小兔子高兴极了，跟着小松鼠一起走。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/99/20250403/b0fe3396/b3fbfd95-90bc-4e7b-828b-17024fb85b54740623192.png?Expires=1743755176&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=77%2BfksW7fRlo%2BqLZMh%2B5rzHQNMM%3D"
+    },
+    {
+      "text": "场景四：小兔子找到了家\n小兔子跟着小松鼠穿过树林、跳过小溪，终于找到了家。小兔子妈妈见到他安全归来，抱着他说：“乖孩子，下次再出去玩要注意路哦。”小兔子点点头，觉得自己很幸运有小松鼠帮忙。",
+      "prompt": "童话风格的插图，可爱温馨，场景四：小兔子找到了家\n小兔子跟着小松鼠穿过树林、跳过小溪，终于找到了家。小兔子妈妈见到他安全归来，抱着他说：“乖孩子，下次再出去玩要注意路哦。”小兔子点点头，觉得自己很幸运有小松鼠帮忙。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/cd/20250403/b0fe3396/1ea9c661-92ba-4269-8868-e869c1ad5ce52880081270.png?Expires=1743755187&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=sFOjrLbuWlE7qRzBhHLrAznYfkg%3D"
+    },
+    {
+      "text": "故事结束。小兔子学会了需要注意周围的环境，不要随意乱跑，同时也学会了在困难时向别人求助。这是一个关于友爱和团结的温馨故事。",
+      "prompt": "童话风格的插图，可爱温馨，故事结束。小兔子学会了需要注意周围的环境，不要随意乱跑，同时也学会了在困难时向别人求助。这是一个关于友爱和团结的温馨故事。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/53/20250403/8928fb36/eea369ff-27aa-4bb7-8770-4e43d509811b1742839527.png?Expires=1743755196&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=w4LvcWyYCSsgO%2F8YEQI6ZNPl7CU%3D"
+    }
+  ]
+}

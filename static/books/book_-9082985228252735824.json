@@ -1,0 +1,42 @@
+{
+  "title": "故事内容：",
+  "story": "故事内容：\n\n场景一：小白兔迷路了\n    从早晨起床的时候，小白兔就觉得今天的世界有些不一样。他出门去找胡萝卜的路变得陌生而迷茫。他不知道应该往哪个方向走，只看到周围一片陌生的景色，心里有点害怕又有点好奇。\n\n场景二：森林的奇遇\n    小白兔走着走着，来到了一片茂密的森林。树叶在微风中轻轻摇曳，鸟儿在枝头欢快地歌唱。小白兔感到有些害怕，但也觉得这里很神奇。他遇到了一只友善的松鼠，松鼠告诉他应该往南边的小溪走，那里会有回家的路。\n\n场景三：小溪的冒险\n    小白兔顺着松鼠指的方向走，来到了一条清澈见底的小溪旁边。他看到了许多美丽的水草和小鱼，还有一只调皮的青蛙在跳来跳去。小白兔想喝口水，结果不小心掉进了小溪里！他拼命地游啊游，终于被一只大鱼救了出来。\n\n场景四：回家的路\n    小白兔抱着大鱼，顺着小溪往回走。他感到有些疲惫，但心里却充满了对回家的渴望。当太阳渐渐落山时，他看到了熟悉的胡萝卜田，终于回到了家。妈妈白兔早已在家门口等着他，看到他平安回来，高兴地抱住他说：“小白兔，你回来了！”\n\n故事结束。",
+  "scenes": [
+    {
+      "text": "故事内容：",
+      "prompt": "童话风格的插图，可爱温馨，故事内容：",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/ff/20250403/8928fb36/3da17238-3b90-411b-9f6e-f88c1dba71623203699728.png?Expires=1743750100&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=PoFOEhBVRkBOZkpi8kCRwBB0%2F7s%3D"
+    },
+    {
+      "text": "场景一：小白兔迷路了\n    从早晨起床的时候，小白兔就觉得今天的世界有些不一样。他出门去找胡萝卜的路变得陌生而迷茫。他不知道应该往哪个方向走，只看到周围一片陌生的景色，心里有点害怕又有点好奇。",
+      "prompt": "童话风格的插图，可爱温馨，场景一：小白兔迷路了\n    从早晨起床的时候，小白兔就觉得今天的世界有些不一样。他出门去找胡萝卜的路变得陌生而迷茫。他不知道应该往哪个方向走，只看到周围一片陌生的景色，心里有点害怕又有点好奇。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/4a/20250403/b0fe3396/db36fefa-104f-4e72-ad83-3b8f4f25f95b3908037281.png?Expires=1743750110&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=VbrCsK0%2BKEzWvBrXu9yiRCIj5bk%3D"
+    },
+    {
+      "text": "场景二：森林的奇遇\n    小白兔走着走着，来到了一片茂密的森林。树叶在微风中轻轻摇曳，鸟儿在枝头欢快地歌唱。小白兔感到有些害怕，但也觉得这里很神奇。他遇到了一只友善的松鼠，松鼠告诉他应该往南边的小溪走，那里会有回家的路。",
+      "prompt": "童话风格的插图，可爱温馨，场景二：森林的奇遇\n    小白兔走着走着，来到了一片茂密的森林。树叶在微风中轻轻摇曳，鸟儿在枝头欢快地歌唱。小白兔感到有些害怕，但也觉得这里很神奇。他遇到了一只友善的松鼠，松鼠告诉他应该往南边的小溪走，那里会有回家的路。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/5b/20250403/b0fe3396/0c3fbf7c-fe5f-425f-8afe-4fbee8a5f6513624201436.png?Expires=1743750121&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=dHIyw%2B57H3vpMPt3saz%2F6pfVGbw%3D"
+    },
+    {
+      "text": "场景三：小溪的冒险\n    小白兔顺着松鼠指的方向走，来到了一条清澈见底的小溪旁边。他看到了许多美丽的水草和小鱼，还有一只调皮的青蛙在跳来跳去。小白兔想喝口水，结果不小心掉进了小溪里！他拼命地游啊游，终于被一只大鱼救了出来。",
+      "prompt": "童话风格的插图，可爱温馨，场景三：小溪的冒险\n    小白兔顺着松鼠指的方向走，来到了一条清澈见底的小溪旁边。他看到了许多美丽的水草和小鱼，还有一只调皮的青蛙在跳来跳去。小白兔想喝口水，结果不小心掉进了小溪里！他拼命地游啊游，终于被一只大鱼救了出来。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/ad/20250403/b0fe3396/193e12a1-0cc5-43bd-b5c2-c564116a2a6f3959901170.png?Expires=1743750132&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=VJYbQMj%2FHzk9wgG1Npp1CR9e7qM%3D"
+    },
+    {
+      "text": "场景四：回家的路\n    小白兔抱着大鱼，顺着小溪往回走。他感到有些疲惫，但心里却充满了对回家的渴望。当太阳渐渐落山时，他看到了熟悉的胡萝卜田，终于回到了家。妈妈白兔早已在家门口等着他，看到他平安回来，高兴地抱住他说：“小白兔，你回来了！”",
+      "prompt": "童话风格的插图，可爱温馨，场景四：回家的路\n    小白兔抱着大鱼，顺着小溪往回走。他感到有些疲惫，但心里却充满了对回家的渴望。当太阳渐渐落山时，他看到了熟悉的胡萝卜田，终于回到了家。妈妈白兔早已在家门口等着他，看到他平安回来，高兴地抱住他说：“小白兔，你回来了！”",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/ea/20250403/8928fb36/d4e10f54-fbee-41d2-8cde-ce43e93ed2a6106146715.png?Expires=1743750143&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=Ef3U11ipr8Nq5iYtfQWm0Msy1OQ%3D"
+    },
+    {
+      "text": "故事结束。",
+      "prompt": "童话风格的插图，可爱温馨，故事结束。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/93/20250403/b0fe3396/e68e3933-f47d-4ea2-bbdd-0c4577739516621469227.png?Expires=1743750152&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=r8NzrbFb9DujOEThdUgPlHfwVgw%3D"
+    }
+  ]
+}

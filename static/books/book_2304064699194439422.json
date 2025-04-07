@@ -1,0 +1,42 @@
+{
+  "title": "故事内容：",
+  "story": "故事内容：\n\n场景一：\n小白兔咚咚咚，跳着蹦蹦跳，来到了一片陌生的花海。五颜六色的花儿在微风中摇曳生姿，小白兔惊喜地转了几个圈，却发现自己迷路了。\n\n场景二：\n小白兔跑啊跑，跳啊跳，却越走越远，迷路的感觉让它有点害怕。突然，一只友善的小松鼠出现在小白兔面前，说：“别怕，我带你回家！”小白兔高兴地跟着小松鼠，它们穿过一片绿树林，看到了熟悉的风景。\n\n场景三：\n小白兔终于回到了家，它的妈妈早已在门口等候。妈妈抱着小白兔，温柔地说：“迷路了吗？下次要注意哦，不要独自乱跑。”小白兔点了点头，感激地看着妈妈。\n\n场景四：\n从此，小白兔再也不乱跑了。它每天都和小松鼠一起玩耍，享受着家的温暖和友谊。傍晚时分，小白兔躺在舒适的窝里，闭上眼睛，梦到了一片美丽的花海和一只友善的小松鼠。\n\n故事结束。",
+  "scenes": [
+    {
+      "text": "故事内容：",
+      "prompt": "童话风格的插图，可爱温馨，故事内容：",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/8a/20250403/b0fe3396/88c9af42-1100-46d9-8831-3d1ad9ea5b372187629665.png?Expires=1743750706&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=SuQTj6FwcXTpCYBBlj%2B%2FjJkZ7TA%3D"
+    },
+    {
+      "text": "场景一：\n小白兔咚咚咚，跳着蹦蹦跳，来到了一片陌生的花海。五颜六色的花儿在微风中摇曳生姿，小白兔惊喜地转了几个圈，却发现自己迷路了。",
+      "prompt": "童话风格的插图，可爱温馨，场景一：\n小白兔咚咚咚，跳着蹦蹦跳，来到了一片陌生的花海。五颜六色的花儿在微风中摇曳生姿，小白兔惊喜地转了几个圈，却发现自己迷路了。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/26/20250403/8928fb36/4b5452d4-31e4-4ffa-bc14-99448048a7d44217247891.png?Expires=1743750714&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=K5b35nQQP0nMfk4838K8A6eqHeM%3D"
+    },
+    {
+      "text": "场景二：\n小白兔跑啊跑，跳啊跳，却越走越远，迷路的感觉让它有点害怕。突然，一只友善的小松鼠出现在小白兔面前，说：“别怕，我带你回家！”小白兔高兴地跟着小松鼠，它们穿过一片绿树林，看到了熟悉的风景。",
+      "prompt": "童话风格的插图，可爱温馨，场景二：\n小白兔跑啊跑，跳啊跳，却越走越远，迷路的感觉让它有点害怕。突然，一只友善的小松鼠出现在小白兔面前，说：“别怕，我带你回家！”小白兔高兴地跟着小松鼠，它们穿过一片绿树林，看到了熟悉的风景。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/7b/20250403/8928fb36/841655ca-e622-4db5-8654-6486ad3706683687632228.png?Expires=1743750723&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=paMkd8ByEBQUqELzw8tXTKVMuFA%3D"
+    },
+    {
+      "text": "场景三：\n小白兔终于回到了家，它的妈妈早已在门口等候。妈妈抱着小白兔，温柔地说：“迷路了吗？下次要注意哦，不要独自乱跑。”小白兔点了点头，感激地看着妈妈。",
+      "prompt": "童话风格的插图，可爱温馨，场景三：\n小白兔终于回到了家，它的妈妈早已在门口等候。妈妈抱着小白兔，温柔地说：“迷路了吗？下次要注意哦，不要独自乱跑。”小白兔点了点头，感激地看着妈妈。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/28/20250403/8928fb36/404e5bfd-0c0b-484e-bbe7-cb15e39def0a4039895648.png?Expires=1743750735&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=oGjMQIN7JeoJANbLkuf17ydX0zE%3D"
+    },
+    {
+      "text": "场景四：\n从此，小白兔再也不乱跑了。它每天都和小松鼠一起玩耍，享受着家的温暖和友谊。傍晚时分，小白兔躺在舒适的窝里，闭上眼睛，梦到了一片美丽的花海和一只友善的小松鼠。",
+      "prompt": "童话风格的插图，可爱温馨，场景四：\n从此，小白兔再也不乱跑了。它每天都和小松鼠一起玩耍，享受着家的温暖和友谊。傍晚时分，小白兔躺在舒适的窝里，闭上眼睛，梦到了一片美丽的花海和一只友善的小松鼠。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/73/20250403/8928fb36/99c85288-817f-40d3-8104-e56b4676e91c702905566.png?Expires=1743750746&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=quA9s8ZLjfFef3piwzpNOQKd3HQ%3D"
+    },
+    {
+      "text": "故事结束。",
+      "prompt": "童话风格的插图，可爱温馨，故事结束。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/41/20250403/b0fe3396/7b78ee82-8f53-48e5-baad-fb3954d78eb61916987927.png?Expires=1743750756&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=WhgocOBv56HxXPKKsBg%2Bn6hWTM4%3D"
+    }
+  ]
+}

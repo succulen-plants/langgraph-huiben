@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI绘本生成器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --primary-hover: #45a049;
+            --error-color: #f44336;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-light: #f9f9f9;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --radius: 8px;
+            --spacing: 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing);
+        }
+
+        .page-header {
+            margin-bottom: var(--spacing);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            margin: 0;
+            color: var(--text-color);
+            font-size: 1.8rem;
+        }
+
+        .subtitle {
+            margin: 5px 0 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .input-section {
+            background: white;
+            padding: var(--spacing);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: var(--spacing);
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            resize: vertical;
+            min-height: 60px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .checkbox-group {
+            margin-bottom: 10px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .primary-btn {
+            width: 100%;
+            padding: 12px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .primary-btn:hover {
+            background: var(--primary-hover);
+        }
+
+        .primary-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .story-preview-container {
+            background: white;
+            padding: var(--spacing);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: var(--spacing);
+        }
+
+        .story-preview-container h3 {
+            margin: 0 0 10px;
+            color: var(--text-color);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .story-preview {
+            white-space: pre-wrap;
+            line-height: 1.6;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .image-generation-status {
+            background: white;
+            padding: var(--spacing);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: var(--spacing);
+            display: none;
+        }
+
+        .image-generation-status h3 {
+            margin: 0 0 10px;
+            color: var(--text-color);
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .image-generation-progress {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .progress-bar-container {
+            flex: 1;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-color), #81c784);
+            width: 0;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            min-width: 80px;
+            text-align: right;
+        }
+
+        .progress-number {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .image-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: var(--spacing);
+            background: var(--bg-light);
+            padding: var(--spacing);
+            border-radius: var(--radius);
+        }
+
+        .image-container {
+            background: white;
+            padding: 10px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: calc(var(--radius) - 2px);
+        }
+
+        .scene-text {
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .review-container {
+            background: white;
+            padding: var(--spacing);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: var(--spacing);
+            display: none;
+        }
+
+        .review-container h3 {
+            margin: 0 0 10px;
+            color: var(--text-color);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .review-instruction {
+            margin: 0 0 var(--spacing);
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .review-story {
+            background: var(--bg-light);
+            padding: var(--spacing);
+            border-radius: var(--radius);
+            margin-bottom: var(--spacing);
+            white-space: pre-wrap;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            color: var(--text-color);
+        }
+
+        .review-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .review-buttons button {
+            padding: 10px;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .approve-btn {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .reject-btn {
+            background: var(--error-color);
+            color: white;
+        }
+
+        .approval-success {
+            margin-top: var(--spacing);
+            padding: 12px;
+            background: #e8f5e9;
+            border-radius: var(--radius);
+            color: #2e7d32;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .page-footer {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.8rem;
+            margin-top: var(--spacing);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .review-buttons {
+                grid-template-columns: 1fr;
+            }
+            
+            .image-preview {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1><i class="fas fa-book-open"></i> AI绘本生成器</h1>
+            <p class="subtitle">输入故事大纲，让AI为您创作精美的儿童绘本</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <form id="storyForm">
+                    <div class="form-group">
+                        <!-- <label for="outline">请输入故事大纲：</label> -->
+                        <textarea name="outline" id="outline" rows="3" required
+                            placeholder="例如：一只小白兔在魔法森林里寻找丢失的胡萝卜的故事"></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="streaming" id="streaming" checked>
+                            <span class="checkbox-text">实时显示生成过程</span>
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" id="submitBtn" class="primary-btn">
+                            <i class="fas fa-magic"></i> 开始创作
+                        </button>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="preview-section">
+                <div id="preview" style="display: none;">
+                    <div class="preview-content">
+                        <div class="story-preview-container">
+                            <h3><i class="fas fa-book"></i> 故事内容</h3>
+                            <div id="storyPreview" class="story-preview"></div>
+                        </div>
+                        <div class="image-generation-status" id="imageGenerationStatus">
+                            <h3><i class="fas fa-images"></i> 图片生成进度</h3>
+                            <div class="image-generation-progress">
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" id="progressBar"></div>
+                                </div>
+                                <div class="progress-text">第 <span class="progress-number" id="currentImage">0</span>/<span class="progress-number" id="totalImages">0</span> 张</div>
+                            </div>
+                        </div>
+                        <div class="image-preview" id="imagePreview"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="review-section">
+                <div class="review-container" id="reviewContainer">
+                    <h3><i class="fas fa-clipboard-check"></i> 故事审核</h3>
+                    <p class="review-instruction">请确认故事内容是否适合儿童阅读：</p>
+                    <div class="review-story" id="reviewStory"></div>
+                    <div class="review-buttons">
+                        <button class="approve-btn" onclick="handleReview(true)">
+                            <i class="fas fa-check"></i> 确认生成图片
+                        </button>
+                        <button class="reject-btn" onclick="handleReview(false)">
+                            <i class="fas fa-redo"></i> 重新生成
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>AI绘本生成器 &copy; 2023 | 基于LangGraph和OpenAI技术</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('storyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleSubmit();
+        });
+
+        async function handleSubmit() {
+            const form = document.getElementById('storyForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const preview = document.getElementById('preview');
+            const storyPreview = document.getElementById('storyPreview');
+            const imagePreview = document.getElementById('imagePreview');
+            const reviewContainer = document.getElementById('reviewContainer');
+            const reviewStory = document.getElementById('reviewStory');
+            
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 创作中';
+            preview.style.display = 'block';
+            storyPreview.textContent = '';
+            imagePreview.innerHTML = '';
+            reviewContainer.style.display = 'none';
+            
+            // 重置审核按钮状态
+            const reviewButtons = reviewContainer.querySelectorAll('button');
+            reviewButtons.forEach(btn => btn.disabled = false);
+            
+            const outline = form.outline.value;
+            const streaming = form.streaming.checked;
+            
+            if (streaming) {
+                const params = new URLSearchParams({
+                    outline: outline,
+                    streaming: 'true'
+                });
+                
+                const eventSource = new EventSource(`/generate?${params.toString()}`);
+                
+                eventSource.onmessage = function(event) {
+                    try {
+                        const data = JSON.parse(event.data);
+                        switch(data.type) {
+                            case 'story_update':
+                                storyPreview.textContent = data.content;
+                                break;
+                            case 'image_update':
+                                const imageGenerationStatus = document.getElementById('imageGenerationStatus');
+                                const currentImage = document.getElementById('currentImage');
+                                const totalImages = document.getElementById('totalImages');
+                                
+                                imageGenerationStatus.style.display = 'block';
+                                currentImage.textContent = data.scene_index + 1;
+                                totalImages.textContent = data.total_scenes;
+                                
+                                if (data.image_url) {
+                                    const imageContainer = document.createElement('div');
+                                    imageContainer.className = 'image-container';
+                                    imageContainer.innerHTML = `
+                                        <img src="${data.image_url}" alt="场景${data.scene_index + 1}">
+                                        <p class="scene-text">${data.scene_text}</p>
+                                    `;
+                                    imagePreview.appendChild(imageContainer);
+                                    
+                                    // 更新进度条
+                                    const progressBar = document.getElementById('progressBar');
+                                    const progress = ((data.scene_index + 1) / data.total_scenes) * 100;
+                                    progressBar.style.width = `${progress}%`;
+                                }
+                                break;
+                            case 'final_result':
+                                eventSource.close();
+                                if (data.book_id) {
+                                    window.open(`/view_book/${data.book_id}`, '_blank');
+                                }
+                                break;
+                        }
+                    } catch (error) {
+                        console.error('Error parsing event data:', error);
+                    }
+                };
+                
+                // 添加审核请求事件监听器
+                eventSource.addEventListener('review_request', function(event) {
+                    try {
+                        const data = JSON.parse(event.data);
+                        reviewStory.textContent = data.story;
+                        reviewContainer.style.display = 'block';
+                        // 确保审核按钮是启用状态
+                        reviewButtons.forEach(btn => btn.disabled = false);
+                    } catch (error) {
+                        console.error('Error handling review request:', error);
+                    }
+                });
+                
+                // 添加审核拒绝事件监听器
+                eventSource.addEventListener('review_rejected', function(event) {
+                    try {
+                        eventSource.close();
+                        storyPreview.textContent = '故事未通过审核';
+                        // 添加重新生成按钮
+                        const regenerateBtn = document.createElement('button');
+                        regenerateBtn.className = 'primary-btn';
+                        regenerateBtn.style.marginTop = '20px';
+                        regenerateBtn.innerHTML = '<i class="fas fa-redo"></i> 重新生成';
+                        regenerateBtn.onclick = () => {
+                            // 重新提交表单
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = '<i class="fas fa-magic"></i> 开始创作';
+                            handleSubmit();
+                        };
+                        storyPreview.appendChild(document.createElement('br'));
+                        storyPreview.appendChild(regenerateBtn);
+                    } catch (error) {
+                        console.error('Error handling review rejection:', error);
+                    }
+                });
+                
+                eventSource.addEventListener('complete', function(event) {
+                    try {
+                        eventSource.close();
+                        window.open(`/generate?outline=${encodeURIComponent(outline)}`, '_blank');
+                    } catch (error) {
+                        console.error('Error handling complete event:', error);
+                    }
+                });
+                
+                eventSource.onerror = function(error) {
+                    console.error('EventSource error:', error);
+                    eventSource.close();
+                    storyPreview.textContent += '\n生成过程中出现错误';
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fas fa-magic"></i> 开始创作';
+                    // 确保审核按钮是启用状态
+                    reviewButtons.forEach(btn => btn.disabled = false);
+                };
+            } else {
+                // 非流式处理保持不变
+                const response = await fetch('/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams({
+                        outline: outline,
+                        streaming: 'false'
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const result = await response.text();
+                // 在新窗口中打开结果
+                const newWindow = window.open('', '_blank');
+                newWindow.document.write(result);
+                newWindow.document.close();
+            }
+        }
+
+        async function handleReview(approved) {
+            const reviewContainer = document.getElementById('reviewContainer');
+            const storyPreview = document.getElementById('storyPreview');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            try {
+                // 禁用审核按钮，防止重复提交
+                const buttons = reviewContainer.querySelectorAll('button');
+                buttons.forEach(btn => {
+                    btn.disabled = true;
+                    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 处理中';
+                });
+                
+                const response = await fetch('/review', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ approved })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const result = await response.json();
+                console.log('Review result:', result);
+                
+                reviewContainer.style.display = 'none';
+                
+                if (!approved) {
+                    storyPreview.textContent = '故事未通过审核';
+                    // 添加重新生成按钮
+                    const regenerateBtn = document.createElement('button');
+                    regenerateBtn.className = 'primary-btn';
+                    regenerateBtn.style.marginTop = '20px';
+                    regenerateBtn.innerHTML = '<i class="fas fa-redo"></i> 重新生成';
+                    regenerateBtn.onclick = () => {
+                        // 重新提交表单前启用所有按钮
+                        buttons.forEach(btn => {
+                            btn.disabled = false;
+                            if (btn.classList.contains('approve-btn')) {
+                                btn.innerHTML = '<i class="fas fa-check"></i> 确认生成图片';
+                            } else {
+                                btn.innerHTML = '<i class="fas fa-redo"></i> 重新生成';
+                            }
+                        });
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = '<i class="fas fa-magic"></i> 开始创作';
+                        handleSubmit();
+                    };
+                    storyPreview.appendChild(document.createElement('br'));
+                    storyPreview.appendChild(regenerateBtn);
+                } else {
+                    const imageGenerationStatus = document.getElementById('imageGenerationStatus');
+                    imageGenerationStatus.style.display = 'block';
+                    storyPreview.innerHTML += `
+                        <div class="approval-success">
+                            <i class="fas fa-check-circle"></i> 开始生成图片
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error submitting review:', error);
+                alert('提交审核结果时出错');
+                // 重新启用审核按钮
+                buttons.forEach(btn => {
+                    btn.disabled = false;
+                    if (btn.classList.contains('approve-btn')) {
+                        btn.innerHTML = '<i class="fas fa-check"></i> 确认生成图片';
+                    } else {
+                        btn.innerHTML = '<i class="fas fa-redo"></i> 重新生成';
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html> 

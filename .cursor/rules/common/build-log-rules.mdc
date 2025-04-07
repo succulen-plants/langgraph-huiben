@@ -1,0 +1,9 @@
+---
+description: 构建日志管理规范
+globs: - "**/package.json"       # 匹配所有 package.json   - "**/build.config.js"    # 匹配构建配置文件 priority: 10                # 高优先级规则[5](@ref)
+---
+
+## 日志生成规则
+1. ​**日志文件路径**  
+   - 所有构建日志必须输出到项目根目录的 `dev.log`
+   - 禁止将日志分散到子目录或其他文件[1](mdc:@ref)

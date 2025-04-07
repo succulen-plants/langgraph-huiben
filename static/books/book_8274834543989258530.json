@@ -1,0 +1,36 @@
+{
+  "title": "场景一：小兔子布丁和他的好朋友小松鼠皮皮在森林里玩耍。他们追逐着彩色的蝴蝶",
+  "story": "场景一：小兔子布丁和他的好朋友小松鼠皮皮在森林里玩耍。他们追逐着彩色的蝴蝶，快乐地笑着。\n\n场景二：突然，一阵大风吹来，把小兔子和小松鼠吹散了。小兔子发现自己迷路了，周围都是陌生的树木和花草，他开始害怕起来。\n\n场景三：小兔子哭着喊着，却没有人回应。他突然听到了远处传来的声音，是小松鼠皮皮在呼唤他。小兔子跟着声音走去，终于找到了小松鼠。\n\n场景四：小兔子和小松鼠一起回到了熟悉的小屋，他们坐在一起，相互搂着，感到很幸福。从此以后，他们明白了朋友之间的重要性，再也不会轻易分开了。愉快的音乐响起，画面渐渐消失在深林中。\n\n故事结束：小兔子和小松鼠的友谊在森林里传颂开来，他们一起探险，一起成长，一起度过快乐的时光。妈妈兔子和妈妈松鼠为他们高兴，也为他们祈祷平安。",
+  "scenes": [
+    {
+      "text": "场景一：小兔子布丁和他的好朋友小松鼠皮皮在森林里玩耍。他们追逐着彩色的蝴蝶，快乐地笑着。",
+      "prompt": "童话风格的插图，可爱温馨，场景一：小兔子布丁和他的好朋友小松鼠皮皮在森林里玩耍。他们追逐着彩色的蝴蝶，快乐地笑着。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/23/20250403/8928fb36/ca23fa06-18c6-424f-9042-44817ef551bf1284529011.png?Expires=1743755272&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=DbLdS9PJOo4TnQdq7HcrUsq8dbE%3D"
+    },
+    {
+      "text": "场景二：突然，一阵大风吹来，把小兔子和小松鼠吹散了。小兔子发现自己迷路了，周围都是陌生的树木和花草，他开始害怕起来。",
+      "prompt": "童话风格的插图，可爱温馨，场景二：突然，一阵大风吹来，把小兔子和小松鼠吹散了。小兔子发现自己迷路了，周围都是陌生的树木和花草，他开始害怕起来。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/15/20250403/8928fb36/2a545d10-b5cb-4915-9d23-45738783ec643614455545.png?Expires=1743755282&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=k7ELTH0A6nj9a2kIZBA5nq3O7NQ%3D"
+    },
+    {
+      "text": "场景三：小兔子哭着喊着，却没有人回应。他突然听到了远处传来的声音，是小松鼠皮皮在呼唤他。小兔子跟着声音走去，终于找到了小松鼠。",
+      "prompt": "童话风格的插图，可爱温馨，场景三：小兔子哭着喊着，却没有人回应。他突然听到了远处传来的声音，是小松鼠皮皮在呼唤他。小兔子跟着声音走去，终于找到了小松鼠。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/4f/20250403/8928fb36/ff84eaf0-32b1-41f0-8ffa-28f267c82cdb4190284498.png?Expires=1743755291&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=JlFAKA6ejjKSXAn7pW0bddC6MT0%3D"
+    },
+    {
+      "text": "场景四：小兔子和小松鼠一起回到了熟悉的小屋，他们坐在一起，相互搂着，感到很幸福。从此以后，他们明白了朋友之间的重要性，再也不会轻易分开了。愉快的音乐响起，画面渐渐消失在深林中。",
+      "prompt": "童话风格的插图，可爱温馨，场景四：小兔子和小松鼠一起回到了熟悉的小屋，他们坐在一起，相互搂着，感到很幸福。从此以后，他们明白了朋友之间的重要性，再也不会轻易分开了。愉快的音乐响起，画面渐渐消失在深林中。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/b8/20250403/b0fe3396/a547aaad-06cd-47e1-be7e-c5b3d070b2b72825963519.png?Expires=1743755299&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=IbxGJWh8kvd2%2BtktjNHyuPEOle0%3D"
+    },
+    {
+      "text": "故事结束：小兔子和小松鼠的友谊在森林里传颂开来，他们一起探险，一起成长，一起度过快乐的时光。妈妈兔子和妈妈松鼠为他们高兴，也为他们祈祷平安。",
+      "prompt": "童话风格的插图，可爱温馨，故事结束：小兔子和小松鼠的友谊在森林里传颂开来，他们一起探险，一起成长，一起度过快乐的时光。妈妈兔子和妈妈松鼠为他们高兴，也为他们祈祷平安。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/cd/20250403/8928fb36/bbbd5ef0-4a6b-4431-b99d-2986d9dd76ed2881068276.png?Expires=1743755308&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=MnLRE209xRJc9j%2FvF2aRlPW9%2BAA%3D"
+    }
+  ]
+}

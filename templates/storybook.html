@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="book-container">
+        <!-- 封面 -->
+        <div class="page cover" id="cover">
+            <h1>{{ title }}</h1>
+            <div class="cover-image">
+                <img src="{{ scenes[0].image_url }}" alt="封面">
+            </div>
+        </div>
+
+        <!-- 故事内容页 -->
+        {% for scene in scenes %}
+        <div class="page" id="page-{{ loop.index }}">
+            <div class="page-content">
+                <div class="story-image">
+                    <img src="{{ scene.image_url }}" alt="场景{{ loop.index }}">
+                </div>
+                <div class="story-text">
+                    {{ scene.text }}
+                </div>
+            </div>
+            <div class="page-number">{{ loop.index }}/{{ scenes|length }}</div>
+        </div>
+        {% endfor %}
+
+        <!-- 翻页按钮 -->
+        <div class="navigation">
+            <button id="prev-btn" onclick="prevPage()">上一页</button>
+            <button id="next-btn" onclick="nextPage()">下一页</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        
+        function showPage(index) {
+            pages.forEach(page => page.style.display = 'none');
+            pages[index].style.display = 'block';
+            
+            // 更新按钮状态
+            document.getElementById('prev-btn').disabled = index === 0;
+            document.getElementById('next-btn').disabled = index === pages.length - 1;
+        }
+        
+        function nextPage() {
+            if (currentPage < pages.length - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+        
+        function prevPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+        
+        // 初始显示封面
+        showPage(0);
+    </script>
+</body>
+</html> 

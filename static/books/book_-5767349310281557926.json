@@ -1,0 +1,36 @@
+{
+  "title": "场景一：小白兔的家\n小白兔是一个可爱的小动物",
+  "story": "场景一：小白兔的家\n小白兔是一个可爱的小动物，它居住在一个漂亮的小房子里，周围是一片绿草地和五颜六色的花朵。小白兔每天都会在草地上跳来跳去，玩得不亦乐乎。\n\n场景二：小白兔的探险\n有一天，小白兔决定去森林里探险。它穿过一条小溪，跳过一座小山丘，一不小心走迷了路。小白兔四处张望，只见茂密的树木和高耸的树枝，完全不知道自己在哪里。\n\n场景三：好心的小松鼠\n就在这时，一只善良的小松鼠出现了。小松鼠问小白兔迷路了没有，小白兔点点头。小松鼠说它知道回家的路，于是带着小白兔一起穿过了森林，越过了小山丘，终于安全地回到了小白兔的家。\n\n场景四：回家后的感动\n小白兔感激地看着小松鼠，对它说：“谢谢你，如果没有你，我可能永远也找不到回家的路了。”小松鼠笑着说：“不用客气，朋友就是互相帮助的。”小白兔和小松鼠成了好朋友，它们每天一起在草地上玩耍，再也不用担心迷路了。\n\n故事结束。小朋友们听完这个故事后，可以学到友情的重要性和团结互助的精神。并且希望他们也能像小白兔和小松鼠一样，成为彼此最好的朋友。",
+  "scenes": [
+    {
+      "text": "场景一：小白兔的家\n小白兔是一个可爱的小动物，它居住在一个漂亮的小房子里，周围是一片绿草地和五颜六色的花朵。小白兔每天都会在草地上跳来跳去，玩得不亦乐乎。",
+      "prompt": "童话风格的插图，可爱温馨，场景一：小白兔的家\n小白兔是一个可爱的小动物，它居住在一个漂亮的小房子里，周围是一片绿草地和五颜六色的花朵。小白兔每天都会在草地上跳来跳去，玩得不亦乐乎。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/0f/20250403/b0fe3396/2a3a756c-33df-4ecf-b89d-b0fa2d0cc5ff267230160.png?Expires=1743754774&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=au5xkzhtGjxN7WcTSnQAMKrM0Eg%3D"
+    },
+    {
+      "text": "场景二：小白兔的探险\n有一天，小白兔决定去森林里探险。它穿过一条小溪，跳过一座小山丘，一不小心走迷了路。小白兔四处张望，只见茂密的树木和高耸的树枝，完全不知道自己在哪里。",
+      "prompt": "童话风格的插图，可爱温馨，场景二：小白兔的探险\n有一天，小白兔决定去森林里探险。它穿过一条小溪，跳过一座小山丘，一不小心走迷了路。小白兔四处张望，只见茂密的树木和高耸的树枝，完全不知道自己在哪里。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/17/20250403/b0fe3396/3e495a22-aa90-4506-88ac-3fb7726ee8a21664271626.png?Expires=1743754783&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=Wpzj9EPyeZ6qOZyVqYTbdDjOcbo%3D"
+    },
+    {
+      "text": "场景三：好心的小松鼠\n就在这时，一只善良的小松鼠出现了。小松鼠问小白兔迷路了没有，小白兔点点头。小松鼠说它知道回家的路，于是带着小白兔一起穿过了森林，越过了小山丘，终于安全地回到了小白兔的家。",
+      "prompt": "童话风格的插图，可爱温馨，场景三：好心的小松鼠\n就在这时，一只善良的小松鼠出现了。小松鼠问小白兔迷路了没有，小白兔点点头。小松鼠说它知道回家的路，于是带着小白兔一起穿过了森林，越过了小山丘，终于安全地回到了小白兔的家。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/64/20250403/8928fb36/443cc38c-d2c6-4688-9183-5adebe15bf283390299484.png?Expires=1743754792&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=AFOHxMgmLt5HdEz8PTdTUqI6ktc%3D"
+    },
+    {
+      "text": "场景四：回家后的感动\n小白兔感激地看着小松鼠，对它说：“谢谢你，如果没有你，我可能永远也找不到回家的路了。”小松鼠笑着说：“不用客气，朋友就是互相帮助的。”小白兔和小松鼠成了好朋友，它们每天一起在草地上玩耍，再也不用担心迷路了。",
+      "prompt": "童话风格的插图，可爱温馨，场景四：回家后的感动\n小白兔感激地看着小松鼠，对它说：“谢谢你，如果没有你，我可能永远也找不到回家的路了。”小松鼠笑着说：“不用客气，朋友就是互相帮助的。”小白兔和小松鼠成了好朋友，它们每天一起在草地上玩耍，再也不用担心迷路了。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/df/20250403/b0fe3396/64da704a-ccb3-44e4-be3b-ca132ee5ad341836646293.png?Expires=1743754803&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=TrYGADgvIMcO37TSNLWEgiftV%2Fk%3D"
+    },
+    {
+      "text": "故事结束。小朋友们听完这个故事后，可以学到友情的重要性和团结互助的精神。并且希望他们也能像小白兔和小松鼠一样，成为彼此最好的朋友。",
+      "prompt": "童话风格的插图，可爱温馨，故事结束。小朋友们听完这个故事后，可以学到友情的重要性和团结互助的精神。并且希望他们也能像小白兔和小松鼠一样，成为彼此最好的朋友。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格",
+      "image_url": "https://dashscope-result-wlcb-acdr-1.oss-cn-wulanchabu-acdr-1.aliyuncs.com/1d/2a/20250403/8928fb36/875030b1-6acb-40ce-9a34-ea1a67751c454284755465.png?Expires=1743754813&OSSAccessKeyId=LTAI5tKPD3TMqf2Lna1fASuh&Signature=pgyv6IK5BpXNgrdsJ2q8MP7xMrg%3D"
+    }
+  ]
+}
