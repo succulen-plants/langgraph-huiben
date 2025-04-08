@@ -1,0 +1,29 @@
+{
+  "type": "final_result",
+  "title": "在一个阳光明媚的早晨",
+  "story": "### 故事：兔子迷路\n\n#### 场景一：清晨的森林\n在一个阳光明媚的早晨，兔子小白在绿树成荫的森林里跳跃。鸟儿在枝头叽叽喳喳，花儿在微风中摇摆。小白决定去找美味的胡萝卜，它兴奋地在小路上跳跃，耳朵在空气中抖动。\n\n#### 场景二：迷失的小路\n突然，小白发现自己走进了一条陌生的小路。两侧的树木高高耸立，阳光被遮挡，四周安静得让它有些害怕。小白想：“我怎么会迷路呢？”它坐在一块凉爽的石头上，思考着回家的路。\n\n#### 场景三：朋友的帮助\n就在这时，一只可爱的小松鼠跑了过来，蓝天在它的背后闪耀。“你好，小兔子！你怎么了？”小白哭泣着说：“我迷路了！”小松鼠微笑着说：“别担心，我可以带你回家！”于是，它们一起沿着小松鼠熟悉的小路，像风一样飞奔，终于找到了小白的家。\n\n---",
+  "scenes": [
+    {
+      "text": "在一个阳光明媚的早晨，兔子小白在绿树成荫的森林里跳跃。鸟儿在枝头叽叽喳喳，花儿在微风中摇摆。小白决定去找美味的胡萝卜，它兴奋地在小路上跳跃，耳朵在空气中抖动。",
+      "prompt": "3D style, fairy tale style, cute and warm; a cheerful young white rabbit named Xiao Bai, wearing a blue apron with small flowers embroidered on it, leaps joyfully down a sunny forest path. The surrounding trees are lush and green, and colorful flowers sway gently in the breeze. Brightly colored birds are perched on branches, chirping merrily, creating a lively and joyful atmosphere.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小白兔: 中等体型，年轻可爱，主体颜色为白色，局部颜色为粉红色，穿着蓝色小围裙，围裙上绣着小花，眼睛大而闪亮，活泼蹦跳，耳朵灵活晃动。",
+      "image_url": "/static/images/6134531244511582493.png"
+    },
+    {
+      "text": "突然，小白发现自己走进了一条陌生的小路。两侧的树木高高耸立，阳光被遮挡，四周安静得让它有些害怕。小白想：“我怎么会迷路呢？”它坐在一块凉爽的石头上，思考着回家的路。",
+      "prompt": "3D style, fairy tale style, cute and warm; Xiao Bai, the white rabbit, sitting alone on a cool stone in the middle of a tall, dark forest path. The strong trees block the sunlight and create a slightly eerie atmosphere. Xiao Bai looks worried, with its big sparkling eyes filled with concern, reflecting its thought of being lost. The forest is quiet, with a few leaves rustling in the gentle breeze.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小白兔: 中等体型，年轻可爱，主体颜色为白色，局部颜色为粉红色，穿着蓝色小围裙，围裙上绣着小花，表情忧虑，眼睛大而闪亮，坐在石头上一动不动。",
+      "image_url": "/static/images/6560285996697391733.png"
+    },
+    {
+      "text": "就在这时，一只可爱的小松鼠跑了过来，蓝天在它的背后闪耀。“你好，小兔子！你怎么了？”小白哭泣着说：“我迷路了！”小松鼠微笑着说：“别担心，我可以带你回家！”于是，它们一起沿着小松鼠熟悉的小路，像风一样飞奔，终于找到了小白的家。",
+      "prompt": "3D style, fairy tale style, cute and warm; a friendly brown squirrel with yellow fur accents, wearing a red ribbon tied around its tail, cheerfully interacts with Xiao Bai, who looks relieved and happy. The background showcases a bright blue sky as they start to run together down a cozy, familiar forest path. The atmosphere is filled with a sense of friendship and adventure, with trees lining the way and a warm sun shining down.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小白兔: 中等体型，年轻可爱，主体颜色为白色，局部颜色为粉红色，穿着蓝色小围裙，围裙上绣着小花，表情从忧虑变得放松和快乐，耳朵灵活晃动。小松鼠: 小巧玲珑，主体颜色为棕色，局部颜色为淡黄色，活泼可爱，尾巴上绑着红色小丝带，表情友好调皮。",
+      "image_url": "/static/images/-2239728032021377589.png"
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,26 @@
+{
+  "type": "final_result",
+  "title": "场景一：小白在森林中的小路",
+  "story": "### 兔子迷路的故事\n\n**场景一：森林中的小路**  \n阳光透过树叶斑驳地洒在草地上，兔子小白在森林里跳跃着，兴高采烈地寻找胡萝卜。四周是高大的树木，鸟儿在枝头欢快地歌唱。小白的耳朵竖得高高的，鼻子不停地嗅着美味的气息。\n\n**场景二：神秘的花园**  \n突然，小白发现了一条从未见过的小路。好奇的它决定探索一下。当它走进那片花园时，五彩斑斓的花朵在微风中摇曳，蜜蜂在花间忙碌地嗡嗡作响。小白欣喜地在花丛中穿梭，却发现自己迷路了。\n\n**场景三：兔子家的温暖**  \n小白担心地四处张望，这时它听到了妈妈的声音：“小白，快回来！”小白朝着声音的方向跑去，经过一片树丛，终于回到了熟悉的家。妈妈用草编的围裙抱住了心爱的兔子，小白高兴地跳了起来，心里下定决心再也不探险了！\n\n---\n\n###",
+  "scenes": [
+    {
+      "text": "场景一：小白在森林中的小路，阳光透过树叶洒在草地上，兔子小白活泼地跳跃，兴高采烈地寻找胡萝卜。",
+      "prompt": "A charming scene in a forest with dappled sunlight filtering through green leaves, illuminating a small white rabbit named Xiao Bai joyfully hopping around in search of carrots. The trees are tall, and cheerful birds sing on the branches, adding a lively atmosphere.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/8772038256835614019.png"
+    },
+    {
+      "text": "场景二：小白发现了一条神秘的小路，走进一片五彩斑斓的花园，蜜蜂在花间忙碌，小白在花丛中穿梭却迷了路。",
+      "prompt": "Xiao Bai exploring a mysterious garden with vibrant, colorful flowers swaying in the gentle breeze. Busy bees buzz around the petals, while Xiao Bai hops joyfully among the flowers, but soon looks confused as it realizes it is lost. The garden is enchanting, filled with various flowers creating a magical setting.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/2326921414549912231.png"
+    },
+    {
+      "text": "场景三：小白听到妈妈的呼唤，快速朝声音方向跑去，经过树丛终于回到温暖的家，妈妈用围裙紧紧抱住小白。",
+      "prompt": "A warm scene depicting Xiao Bai racing through a patch of bushes, following the sound of its mother's voice calling out. Finally, Xiao Bai arrives home where its mother, a caring and warm rabbit, embraces it with a handmade grass apron, showcasing love and warmth in a cozy setting. The background has a small burrow surrounded by soft grass.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-3441487486584020454.png"
+    }
+  ],
+  "completed": true
+}

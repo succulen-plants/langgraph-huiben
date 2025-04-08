@@ -1,0 +1,29 @@
+{
+  "type": "final_result",
+  "title": "在阳光明媚的草原上",
+  "story": "### 故事：小兔子找朋友\n\n**场景一：阳光草原**  \n在阳光明媚的草原上，小兔子跳着，草地上遍布五颜六色的花朵，蓝天上飘着白云。小兔子抬起头，耳朵竖得高高的，心想：“我想找一个朋友!” 它的眼睛闪闪发光，决定出发去寻找。\n\n**场景二：林间小路**  \n小兔子跑到了林间小路，四周高大的树木像绿色的大伞，阳光透过树叶洒下斑驳的光影。它遇到了一只小松鼠，急忙问：“小松鼠，你愿意和我做朋友吗？”小松鼠摇摇头，忙着在树上跳来跳去。\n\n**场景三：星空湖边**  \n小兔子气馁地来到湖边，湖水在月光下 shimmering like diamonds。它看见一只小鸭子在水中嬉戏，忍不住叫了一声：“小鸭子！可以做我的朋友吗？”小鸭子开心地仰起头：“当然可以！”小兔子开心地笑了，终于找到朋友了。\n\n---",
+  "scenes": [
+    {
+      "text": "在阳光明媚的草原上，小兔子跳着，草地上遍布五颜六色的花朵，蓝天上飘着白云。小兔子抬起头，耳朵竖得高高的，心想：“我想找一个朋友!” 它的眼睛闪闪发光，决定出发去寻找。",
+      "prompt": "A sunny meadow with vibrant flowers in various colors under a bright blue sky with fluffy white clouds. A small, white rabbit with pink inner ears and a simple blue ribbon is jumping excitedly. The rabbit has big, bright eyes and a cheerful expression as it looks around, ready to find a friend. The atmosphere is warm and inviting, filled with a sense of adventure and happiness.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小兔子: 基础外观：兔子，娇小，幼兔特征；颜色特征：白色，耳朵内侧粉色；服装配饰：无服装，系着一条小蓝带；表情姿态：眼睛大而亮，时常露出微笑；跳跃时轻盈，手脚灵活。",
+      "image_url": "/static/images/-1258403591174593947.png"
+    },
+    {
+      "text": "小兔子跑到了林间小路，四周高大的树木像绿色的大伞，阳光透过树叶洒下斑驳的光影。它遇到了一只小松鼠，急忙问：“小松鼠，你愿意和我做朋友吗？”小松鼠摇摇头，忙着在树上跳来跳去。",
+      "prompt": "A woodland path surrounded by tall trees that resemble large green umbrellas. Sunlight filters through the leaves creating dappled patterns on the ground. A small, white rabbit with a blue ribbon is eagerly asking a brown squirrel with a bushy tail, who has light stripes on its back, for friendship. The squirrel appears busy and curious as it swiftly jumps from tree to tree, shaking its head. The ambiance is lively and playful, filled with the sounds of nature.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小兔子: 基础外观：兔子，娇小，幼兔特征；颜色特征：白色，耳朵内侧粉色；服装配饰：无服装，系着一条小蓝带；表情姿态：眼睛大而亮，时常露出微笑；跳跃时轻盈，手脚灵活。\n小松鼠: 基础外观：松鼠，灵活，年轻；颜色特征：棕色，腹部稍浅，背部有浅色条纹；服装配饰：无服装，尾巴蓬松，像一个小扫帚；表情姿态：常常好奇地眨眼，急促地跳跃，动作迅速。",
+      "image_url": "/static/images/6275446926473854508.png"
+    },
+    {
+      "text": "小兔子气馁地来到湖边，湖水在月光下 shimmering like diamonds。它看见一只小鸭子在水中嬉戏，忍不住叫了一声：“小鸭子！可以做我的朋友吗？”小鸭子开心地仰起头：“当然可以！”小兔子开心地笑了，终于找到朋友了。",
+      "prompt": "A tranquil lakeside scene under a starry night sky with the moonlight shimmering on the water like diamonds. A small, white rabbit with a blue ribbon is calling out to a round, yellow duckling with an orange beak that is happily splashing in the water. The duckling looks up, filled with joy and excitement as it responds. The setting conveys a sense of peace and happiness, perfect for friendship to blossom.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小兔子: 基础外观：兔子，娇小，幼兔特征；颜色特征：白色，耳朵内侧粉色；服装配饰：无服装，系着一条小蓝带；表情姿态：眼睛大而亮，时常露出微笑；跳跃时轻盈，手脚灵活。\n小鸭子: 基础外观：鸭子，圆胖，幼鸭特征；颜色特征：黄色，喙橘色；服装配饰：无服装；表情姿态：眼睛炯炯有神，喜欢在水中嬉戏，游动时轻快心情愉悦。",
+      "image_url": "/static/images/-9032218136653910123.png"
+    }
+  ],
+  "completed": true
+}

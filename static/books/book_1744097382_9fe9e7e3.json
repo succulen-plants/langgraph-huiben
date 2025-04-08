@@ -1,0 +1,26 @@
+{
+  "type": "final_result",
+  "title": "在一个阳光明媚的早晨",
+  "story": "### 故事：小兔子的迷路冒险\n\n**场景一：绿油油的森林**  \n在一个阳光明媚的早晨，小兔子跳过嫩绿的草地，奔向森林深处。四周是高大的松树，树叶随风摇曳，像是和小兔子打招呼。小兔子兴奋地 sniff sniff，闻到花香和泥土的气息：“啊，这里真美！”\n\n**场景二：五彩缤纷的花丛**  \n小兔子一边玩耍，一边追逐着一只彩色的蝴蝶。哎呀，一不小心，小兔子跑进了五彩缤纷的花丛，周围的花花草草让小兔子迷了路。鲜艳的花朵在阳光下闪闪发光，小兔子四处张望，心里有点紧张：“我该怎么回家呢？”\n\n**场景三：友好的小刺猬**  \n正在这时，小刺猬慢慢爬了过来。“你好，小兔子！你迷路了吗？”小兔子点了点头，眼中流露出一丝希望。小刺猬笑着说：“跟我来，我知道回家的路。”阳光洒在他们身上，伴随着鸟儿的欢声笑语，他们一起走出了花丛，回到了安全的森林里。\n\n---",
+  "scenes": [
+    {
+      "text": "在一个阳光明媚的早晨，小兔子跳过嫩绿的草地，奔向森林深处。四周是高大的松树，树叶随风摇曳，像是和小兔子打招呼。小兔子兴奋地 sniff sniff，闻到花香和泥土的气息：“啊，这里真美！”",
+      "prompt": "A sunny morning scene in a lush green forest. A small white rabbit with light pink ears joyfully hopping over tender green grass, surrounded by tall pine trees whose leaves sway gently in the wind. The atmosphere is cheerful, filled with vibrant flowers and the scent of fresh earth. The rabbit looks excited and happy, sniffing the air with a big smile.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/5888272289975719189.png"
+    },
+    {
+      "text": "小兔子一边玩耍，一边追逐着一只彩色的蝴蝶。哎呀，一不小心，小兔子跑进了五彩缤纷的花丛，周围的花花草草让小兔子迷了路。鲜艳的花朵在阳光下闪闪发光，小兔子四处张望，心里有点紧张：“我该怎么回家呢？”",
+      "prompt": "In a colorful flower patch filled with vibrant blooms under the bright sun, a small white rabbit is playfully chasing a colorful butterfly. The rabbit's expression changes to one of confusion as it realizes it is lost among the flowers, looking around with a worried look. The scene is enchanting, with flowers sparkling in the sunlight.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-2434565197464127324.png"
+    },
+    {
+      "text": "正在这时，小刺猬慢慢爬了过来。“你好，小兔子！你迷路了吗？”小兔子点了点头，眼中流露出一丝希望。小刺猬笑着说：“跟我来，我知道回家的路。”阳光洒在他们身上，伴随着鸟儿的欢声笑语，他们一起走出了花丛，回到了安全的森林里。",
+      "prompt": "In a warm and friendly atmosphere, a small hedgehog is approaching the little rabbit. The hedgehog, brown with a light yellow belly and tiny spikes, is smiling warmly at the rabbit. The rabbit looks hopeful and nods in response. Sunlight beams down on them as they share a moment of friendship, surrounded by cheerful birds singing nearby. They begin to walk together out of the colorful flower patch back to the safety of the forest.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-269371295948327274.png"
+    }
+  ],
+  "completed": true
+}

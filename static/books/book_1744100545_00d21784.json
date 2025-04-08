@@ -1,0 +1,27 @@
+{
+  "title": "阳光灿烂的一天",
+  "story": "### 故事：兔子迷路\n\n**场景一：可爱的草地**  \n阳光灿烂的一天，小兔子莉莉在绿油油的草地上跳来跳去。五颜六色的花朵在风中摇曳，蜜蜂在附近忙着采蜜。莉莉突然看到一只漂亮的蝴蝶，便跟着它向森林深处跑去。她没注意到，自己已经离家越来越远了。\n\n**场景二：神秘的森林**  \n莉莉跑进森林，四周高大的树木像巨人一样伫立。阳光透过树叶间的缝隙，洒下点点金光，让小兔子感到好奇又害怕。她停下来，环顾四周，发现这一切都变得陌生。小鸟在树上欢快地歌唱，但莉莉感到有些孤独。\n\n**场景三：友好的小松鼠**  \n就在这时，小松鼠斯卡蹦了过来。“你好，小兔子！为什么这么忧伤？”斯卡友好地问。莉莉叹了口气，告诉斯卡自己迷路了。斯卡微笑着说：“我带你回家吧！”他们一起穿过森林，最后找到了小兔子莉莉的家。莉莉开心地喊：“谢谢你，斯卡！”\n\n---",
+  "scenes": [
+    {
+      "text": "阳光灿烂的一天，小兔子莉莉在绿油油的草地上跳来跳去，五颜六色的花朵在风中摇曳，蜜蜂在附近忙着采蜜。她看到一只漂亮的蝴蝶，便跟着它向森林深处跑去，没有注意到自己已经离家越来越远。",
+      "prompt": "A sunny day in a vibrant green meadow, with a small white rabbit named Lily joyfully hopping around. She has pink inner ears and a long fluffy tail, adorned with a small red flower on her ear. Colorful flowers sway gently in the breeze and bees buzz nearby. In the background, a beautiful butterfly flutters, attracting Lily's attention as she decides to follow it deeper into the forest. The atmosphere is cheerful and whimsical.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "莉莉: 小兔子, 白色毛发, 耳朵内侧粉红, 长尾巴, 小红花装饰在耳朵上, 带着微笑, 蹦跳着走",
+      "image_url": "/static/images/2728138642732260603.png"
+    },
+    {
+      "text": "莉莉跑进森林，四周高大的树木像巨人一样伫立。阳光透过树叶间的缝隙，洒下点点金光，让小兔子感到好奇又害怕。她停下来，环顾四周，发现这一切都变得陌生。小鸟在树上欢快地歌唱，但莉莉感到有些孤独。",
+      "prompt": "Inside a mysterious forest with tall trees looming like giants. Sunlight filters through the leaves, casting golden specks on the ground. Lily, the small white rabbit, looks around with a sense of curiosity and fear written on her face. She stands alone, surrounded by unfamiliarity, while cheerful birds sing from the branches above. The mood is a mix of wonder and unease.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "莉莉: 小兔子, 白色毛发, 耳朵内侧粉红, 长尾巴, 表情有些害怕，出神的看着四周",
+      "image_url": "/static/images/7915086963074077088.png"
+    },
+    {
+      "text": "就在这时，小松鼠斯卡蹦了过来，友好地问莉莉为什么这么忧伤。莉莉告知斯卡自己迷路了。斯卡微笑着说：“我带你回家吧！”他们一起穿过森林，最终找到了小兔子莉莉的家。莉莉开心地喊：“谢谢你，斯卡！”",
+      "prompt": "A friendly encounter between Lily, the small white rabbit, and a young brown squirrel named Scar. Scar, with his fluffy brown fur and a cream-colored belly, approaches Lily with a warm smile, extending his hand in friendship. They are surrounded by lush greenery as they prepare to walk together through the forest, with Lily's face lighting up in joy as she thanks Scar. The scene radiates warmth and camaraderie.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "莉莉: 小兔子, 白色毛发, 耳朵内侧粉红, 长尾巴, 满脸笑容, 看起来很开心\n斯卡: 小松鼠, 棕色毛发, 肚子米色, 毛发蓬松, 总是带着温暖的笑容，灵活跳跃，伸出手来",
+      "image_url": "/static/images/-1662589331033927563.png"
+    }
+  ]
+}

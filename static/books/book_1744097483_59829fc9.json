@@ -1,0 +1,26 @@
+{
+  "type": "final_result",
+  "title": "在一个阳光明媚的早晨",
+  "story": "### 故事：小羊的新探险\n\n**场景一：山坡上的阳光**  \n在一个阳光明媚的早晨，小羊咩咩在鲜花盛开的山坡上欢快地跳跃。五彩斑斓的花朵像小妹妹的裙子一样在微风中摇曳，蝴蝶在旁边翩翩起舞。小羊一边吃着嫩绿的草，一边好奇地朝山洞的方向看去，心中充满了探险的渴望。\n\n**场景二：幽暗的山洞**  \n小羊咩咩鼓起勇气，慢慢走进了黑黢黢的山洞。洞内部墙壁光滑如水，细小的石头在光线下闪闪发光。咩咩的心跳加速，但它想：“也许里面有有趣的东西。”突然，洞内发出轻微的回声，小羊觉得非常好奇，勇敢地继续前行。\n\n**场景三：神秘的宝藏**  \n就在小羊深深探索的时候，它发现了一个闪闪发光的宝藏——五颜六色的宝石！这些宝石在岩石上像星星一样闪烁。小羊高兴地叫了起来：“好漂亮的宝藏！”它决定把宝石带回去，和小伙伴们分享这场不可思议的探险。\n\n---",
+  "scenes": [
+    {
+      "text": "在一个阳光明媚的早晨，小羊咩咩在鲜花盛开的山坡上欢快地跳跃。五彩斑斓的花朵像小妹妹的裙子一样在微风中摇曳，蝴蝶在旁边翩翩起舞。小羊一边吃着嫩绿的草，一边好奇地朝山洞的方向看去，心中充满了探险的渴望。",
+      "prompt": "A cheerful little lamb hopping joyfully on a sunny hillside covered with vibrant flowers, swaying gently in the breeze. Colorful butterflies flutter around as the lamb curiously gazes towards a dark cave in the distance. The atmosphere is warm and inviting, with a bright blue sky and soft clouds above.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-1779763729922258095.png"
+    },
+    {
+      "text": "小羊咩咩鼓起勇气，慢慢走进了黑黢黢的山洞。洞内部墙壁光滑如水，细小的石头在光线下闪闪发光。咩咩的心跳加速，但它想：“也许里面有有趣的东西。”突然，洞内发出轻微的回声，小羊觉得非常好奇，勇敢地继续前行。",
+      "prompt": "The brave little lamb cautiously entering a dark cave, surrounded by smooth walls that shimmer in the faint light, small sparkling stones scattered on the ground. The lamb's heart is racing, but it wears an intrigued expression, continuing its exploration despite the darkness.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/2448163354769891407.png"
+    },
+    {
+      "text": "就在小羊深深探索的时候，它发现了一个闪闪发光的宝藏——五颜六色的宝石！这些宝石在岩石上像星星一样闪烁。小羊高兴地叫了起来：“好漂亮的宝藏！”它决定把宝石带回去，和小伙伴们分享这场不可思议的探险。",
+      "prompt": "The little lamb discovers a glittering treasure of multicolored gemstones inside the cave, shining like stars against the rocky walls. The lamb's eyes widen in delight as it exclaims with joy, filled with excitement about sharing this incredible find with its friends.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-7390487333040330760.png"
+    }
+  ],
+  "completed": true
+}

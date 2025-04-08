@@ -1,0 +1,42 @@
+if (!approved) {
+    storyPreview.textContent = '故事未通过审核';
+    // 添加重新生成按钮
+    const regenerateBtn = document.createElement('button');
+    regenerateBtn.className = 'primary-btn';
+    regenerateBtn.style.marginTop = '20px';
+    regenerateBtn.innerHTML = '<i class="fas fa-redo"></i> 重新生成';
+    regenerateBtn.onclick = async () => {
+        try {
+            // 发送重新生成请求
+            const response = await fetch('/review', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ approved: false, regenerate: true })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            // 启用按钮并重新提交表单
+            buttons.forEach(btn => {
+                btn.disabled = false;
+                if (btn.classList.contains('approve-btn')) {
+                    btn.innerHTML = '<i class="fas fa-check"></i> 确认生成图片';
+                } else {
+                    btn.innerHTML = '<i class="fas fa-redo"></i> 重新生成';
+                }
+            });
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="fas fa-magic"></i> 开始创作';
+            handleSubmit();
+        } catch (error) {
+            console.error('Error requesting regeneration:', error);
+            alert('请求重新生成时出错，请重试');
+        }
+    };
+    storyPreview.appendChild(document.createElement('br'));
+    storyPreview.appendChild(regenerateBtn);
+} 

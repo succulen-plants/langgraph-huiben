@@ -1,0 +1,29 @@
+{
+  "type": "final_result",
+  "title": "场景一：在一个阳光明媚的早晨",
+  "story": "### 故事：兔子迷路\n\n**场景一：森林的早晨**  \n在一个阳光明媚的早晨，兔子小白在花香四溢的森林中跳跃。“咦，那边有一个漂亮的花丛！”小白兴奋地想着。它跑向花丛，扑鼻而来的花香让它忍不住在花丛里打了个滚，脸上满是绿叶和花瓣的印记。\n\n**场景二：神秘的小路**  \n小白玩得开心，却忘记了回家的路。它抬起头来，发现四周的树木高高大大，遮住了阳光。“我迷路了！”小白心里一阵慌张。就在这时，它看到一条蜿蜒的小路，路旁有五彩斑斓的蝴蝶飞舞。小白决定沿着小路继续前行。\n\n**场景三：友好的小伙伴**  \n小白沿着小路走，突然遇见了一只友好的小松鼠。“你在找家吗？”小松鼠问。小白点了点头。小松鼠用尾巴指了指方向：“跟我来，我带你回家！”小白开心地跟着小松鼠，终于回到了温暖的家，阳光洒在它脸上，它笑得像一朵盛开的花。\n\n---",
+  "scenes": [
+    {
+      "text": "场景一：在一个阳光明媚的早晨，兔子小白在花香四溢的森林中跳跃。它兴奋地发现了一个漂亮的花丛，扑鼻而来的花香让它忍不住在花丛里打了个滚，脸上满是绿叶和花瓣的印记。",
+      "prompt": "3D style, fairy tale style, cute and warm; A small white rabbit with big bright eyes and a happy smile, rolling playfully in a colorful flower bush in a sunlit forest. The rabbit has pink inner ears and a few small flowers adorning its ears. The background includes tall, lush trees and vibrant flowers.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小白兔: 基础外观：兔子，娇小，幼兔特征，颜色特征：主体颜色：雪白，局部颜色：耳朵内侧粉红，表情特征：眼睛大而明亮，脸上常挂着微笑，姿态特点：活泼跳跃，动作特征：灵动，随时好奇地探索周围环境。",
+      "image_url": "/static/images/-5090418833878875424.png"
+    },
+    {
+      "text": "场景二：小白玩得开心，却忘记了回家的路。它抬起头来，发现四周的树木高高大大，遮住了阳光。小白感到慌张，发现了一条蜿蜒的小路，路旁有五彩斑斓的蝴蝶飞舞。",
+      "prompt": "3D style, fairy tale style, cute and warm; The small white rabbit looking up anxiously in a dense forest with tall trees blocking the sunlight. The rabbit appears worried, with its big eyes wide open. Nearby, a winding path is visible, surrounded by colorful butterflies fluttering around in a serene and magical atmosphere.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小白兔: 基础外观：兔子，娇小，幼兔特征，颜色特征：主体颜色：雪白，局部颜色：耳朵内侧粉红，表情特征：眼睛大而明亮，脸上常挂着紧张的表情，姿态特点：挺胸抬头，动作特征：四处张望，显得很不安。",
+      "image_url": "/static/images/3175173551185439549.png"
+    },
+    {
+      "text": "场景三：小白沿着小路走，突然遇见了一只友好的小松鼠。小松鼠询问小白是否在找家，并主动带小白回家。小白开心地跟着小松鼠，终于回到了温暖的家，阳光洒在它脸上，它笑得像一朵盛开的花。",
+      "prompt": "3D style, fairy tale style, cute and warm; The small white rabbit happily following a friendly brown squirrel with a white belly and a bushy tail, sitting on the winding path in the forest. The squirrel is smiling and gesturing with its fluffy tail. Sunlight pours down beautifully creating a warm and inviting atmosphere as they make their way home together.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小白兔: 基础外观：兔子，娇小，幼兔特征，颜色特征：主体颜色：雪白，局部颜色：耳朵内侧粉红，表情特征：眼睛大而明亮，脸上挂着开心的笑容，姿态特点：活泼跟随。 小松鼠: 基础外观：松鼠，瘦小，年轻特征，颜色特征：主体颜色：棕色，局部颜色：肚皮白色，表情特征：友好，常带着微笑，姿态特点：灵活，挥舞尾巴。",
+      "image_url": "/static/images/745648599157032879.png"
+    }
+  ],
+  "completed": true
+}

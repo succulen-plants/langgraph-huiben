@@ -1,12 +1,15 @@
-from flask import Flask, render_template, request, Response, stream_with_context, jsonify
+from flask import Flask, render_template, request, Response, stream_with_context, jsonify, session
 from graph_generator import run_story_workflow, download_image, IMAGES_DIR
 from langgraph.types import Command, interrupt
 import json
 import os
 import threading
 from queue import Queue
+from datetime import datetime, timedelta
+import secrets
 
 app = Flask(__name__)
+app.secret_key = 'your-secret-key-replace-in-production'  # 在生产环境中替换为安全的密钥
 
 # 确保存储目录存在
 BOOKS_DIR = "static/books"
@@ -15,10 +18,40 @@ os.makedirs(BOOKS_DIR, exist_ok=True)
 # 存储当前工作流状态
 class WorkflowState:
     def __init__(self):
-        self.review_queue = Queue()
-        self.current_session = None
+        # 使用字典存储每个会话的状态
+        self.sessions = {}
+        # 使用字典存储每个会话的审核队列
+        self.review_queues = {}
+        # 存储会话创建时间
+        self.session_times = {}
+        
+    def create_session(self, session_id):
+        """创建新的会话状态"""
+        self.sessions[session_id] = None
+        self.review_queues[session_id] = Queue()
+        self.session_times[session_id] = datetime.now()
+        
+    def clean_old_sessions(self, max_age_minutes=30):
+        """清理超时的会话"""
+        now = datetime.now()
+        expired = []
+        for session_id, time in self.session_times.items():
+            if now - time > timedelta(minutes=max_age_minutes):
+                expired.append(session_id)
+        
+        for session_id in expired:
+            self.sessions.pop(session_id, None)
+            self.review_queues.pop(session_id, None)
+            self.session_times.pop(session_id, None)
 
 workflow_state = WorkflowState()
+
+@app.before_request
+def before_request():
+    """确保每个请求都有会话ID并清理旧会话"""
+    if 'session_id' not in session:
+        session['session_id'] = secrets.token_urlsafe(16)
+    workflow_state.clean_old_sessions()
 
 @app.route('/')
 def index():
@@ -43,24 +76,47 @@ def view_book(book_id):
 def review_story():
     """处理故事审核结果"""
     try:
+        session_id = session.get('session_id')
+        if not session_id:
+            return jsonify({"error": "No session ID"}), 400
+            
+        # 如果会话不存在，创建一个新会话
+        if session_id not in workflow_state.sessions:
+            workflow_state.create_session(session_id)
+            print(f"创建新会话: {session_id}")
+            
         data = request.json
         approved = data.get('approved', False)
+        regenerate = data.get('regenerate', False)
         
-        # 将审核结果放入队列
-        if workflow_state.current_session:
-            workflow_state.review_queue.put({"approved": approved})
-            return jsonify({"status": "success", "approved": approved})
+        if workflow_state.sessions[session_id] is not None:
+            # 将审核结果放入队列
+            print(f"接收到审核结果: approved={approved}, regenerate={regenerate}")
+            workflow_state.review_queues[session_id].put({"approved": approved, "regenerate": regenerate})
+            return jsonify({"status": "success", "approved": approved, "regenerate": regenerate})
         else:
-            return jsonify({"error": "No active workflow session"}), 400
+            # 如果工作流会话不存在，创建一个新的工作流会话
+            print(f"工作流会话不存在，创建新会话: {session_id}")
+            workflow_state.sessions[session_id] = session_id
+            workflow_state.review_queues[session_id].put({"approved": approved, "regenerate": regenerate})
+            return jsonify({"status": "success", "approved": approved, "new_session": True})
     except Exception as e:
         print(f"Review error: {e}")
         return jsonify({"error": str(e)}), 500
 
 @app.route('/generate', methods=['GET', 'POST'])
 def generate_book():
-    global workflow_state
+    # 获取会话ID
+    session_id = session.get('session_id')
+    if not session_id:
+        return "Session error", 400
+        
+    # 确保会话存在
+    if session_id not in workflow_state.sessions:
+        workflow_state.create_session(session_id)
+        print(f"创建新会话: {session_id}")
     
-    # 获取参数，支持 GET 和 POST
+    # 获取参数
     if request.method == 'GET':
         outline = request.args.get('outline', '')
         streaming = request.args.get('streaming', 'false').lower() == 'true'
@@ -74,32 +130,28 @@ def generate_book():
     if streaming:
         def generate():
             try:
-                # 清理之前的状态
-                while not workflow_state.review_queue.empty():
-                    workflow_state.review_queue.get()
+                # 使用会话特定的队列
+                review_queue = workflow_state.review_queues[session_id]
+                # 清理队列
+                while not review_queue.empty():
+                    review_queue.get()
                 
-                # 设置当前会话
-                session_id = str(hash(outline))
-                workflow_state.current_session = session_id
+                # 确保会话状态正确
+                workflow_state.sessions[session_id] = session_id
+                print(f"开始生成故事，会话ID: {session_id}")
                 
-                final_state = None
-                for state in run_story_workflow(outline, streaming=True, review_queue=workflow_state.review_queue):
-                    print("state=====================", state)
-                    
+                for state in run_story_workflow(outline, streaming=True, review_queue=review_queue):
                     if state.get("type") == "review_request":
-                        # 发送审核请求事件
                         yield f"event: review_request\ndata: {json.dumps(state, ensure_ascii=False)}\n\n"
                         continue
                     
                     if state.get("type") == "review_rejected":
-                        # 发送审核拒绝事件
                         yield f"event: review_rejected\ndata: {json.dumps(state, ensure_ascii=False)}\n\n"
-                        # 不返回，让前端决定是否重新生成
                         continue
                     
                     if state.get("type") == "final_result":
-                        final_state = state
-                        book_id = session_id
+                        # 使用时间戳和随机数生成唯一的 book_id
+                        book_id = f"{int(datetime.now().timestamp())}_{secrets.token_hex(4)}"
                         book_path = os.path.join(BOOKS_DIR, f"book_{book_id}.json")
                         with open(book_path, 'w', encoding='utf-8') as f:
                             json.dump(state, f, ensure_ascii=False, indent=2)
@@ -107,17 +159,15 @@ def generate_book():
                     
                     yield f"data: {json.dumps(state, ensure_ascii=False)}\n\n"
                 
-                if final_state:
-                    yield f"event: complete\ndata: {json.dumps(final_state, ensure_ascii=False)}\n\n"
-                
             except Exception as e:
                 print(f"Generate error: {e}")
                 yield f"event: error\ndata: {json.dumps({'error': str(e)})}\n\n"
             finally:
                 # 清理会话状态
-                workflow_state.current_session = None
-                while not workflow_state.review_queue.empty():
-                    workflow_state.review_queue.get()
+                workflow_state.sessions[session_id] = None
+                while not workflow_state.review_queues[session_id].empty():
+                    review_queue.get()
+                print(f"故事生成完成，清理会话状态: {session_id}")
         
         return Response(
             stream_with_context(generate()),
@@ -130,13 +180,15 @@ def generate_book():
         )
     else:
         try:
-            result = next(run_story_workflow(outline))
+            review_queue = workflow_state.review_queues[session_id]
+            result = next(run_story_workflow(outline, streaming=False, review_queue=review_queue))
             
             for scene in result['scenes']:
                 if not scene['image_url'].startswith('/static/'):
                     scene['image_url'] = download_image(scene['image_url'], IMAGES_DIR)
             
-            book_id = str(hash(outline))
+            # 使用时间戳和随机数生成唯一的 book_id
+            book_id = f"{int(datetime.now().timestamp())}_{secrets.token_hex(4)}"
             book_path = os.path.join(BOOKS_DIR, f"book_{book_id}.json")
             with open(book_path, 'w', encoding='utf-8') as f:
                 json.dump(result, f, ensure_ascii=False, indent=2)

@@ -1,0 +1,29 @@
+{
+  "type": "final_result",
+  "title": "在阳光明媚的花园里",
+  "story": "### 小兔子找朋友\n\n**场景1:**  \n在阳光明媚的花园里，小兔子跳来跳去。五彩斑斓的花朵在微风中摇曳，蜜蜂在忙碌地采蜜。小兔子的耳朵竖得高高的，四周探头探脑，它想：“今天我要找到一个好朋友！”小兔子蹦到小溪边，听到水流轻声唱歌。\n\n**场景2:**  \n小兔子来到树林里，树叶在阳光下闪闪发光，像绿色的小手在招呼它。“嘿，有谁在这里吗？”小兔子大声喊。突然，一只小松鼠从树上跳下来，带着一颗坚果。小松鼠笑着说：“我可以做你的朋友吗？”小兔子开心地点头。\n\n**场景3:**  \n小兔子和小松鼠一起回到花园，开始画画和玩游戏。闪烁的阳光洒在他们身上，犹如温暖的拥抱。小兔子和小松鼠在一起，快乐地笑着，快乐的声音在花园中回荡。小兔子说：“有朋友真好！”\n\n---",
+  "scenes": [
+    {
+      "text": "在阳光明媚的花园里，小兔子跳来跳去。五彩斑斓的花朵在微风中摇曳，蜜蜂在忙碌地采蜜。小兔子的耳朵竖得高高的，四周探头探脑，它想：“今天我要找到一个好朋友！”小兔子蹦到小溪边，听到水流轻声唱歌。",
+      "prompt": "A small, cute white rabbit with pink-tipped ears and a colorful scarf joyfully jumping in a sunny garden full of colorful blooming flowers. Bees are buzzing around the flowers, while the gentle stream is nearby, reflecting the sunlight. The atmosphere is warm and cheerful, full of life.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小兔子: 雪白的毛，耳尖微微粉红，毛茸茸的，穿着彩色小围巾，眼睛圆圆的，满脸期待，活泼好动，时常蹦跳。",
+      "image_url": "/static/images/622910173476101241.png"
+    },
+    {
+      "text": "小兔子来到树林里，树叶在阳光下闪闪发光，像绿色的小手在招呼它。“嘿，有谁在这里吗？”小兔子大声喊。突然，一只小松鼠从树上跳下来，带着一颗坚果。小松鼠笑着说：“我可以做你的朋友吗？”小兔子开心地点头。",
+      "prompt": "In a sunlit forest, a small white rabbit with pink-tipped ears and a colorful scarf is calling out, looking around curiously. A playful brown squirrel with fluffy tail and yellow belly is jumping down from a tree, holding an acorn. The squirrel has a bright smile, wearing blue overalls with floral designs. The leaves in the sunlight sparkle like little hands waving.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小兔子: 雪白的毛，耳尖微微粉红，毛茸茸的，穿着彩色小围巾，眼睛圆圆的，满脸期待，活泼好动，时常蹦跳。\n小松鼠: 棕色的毛发，肚子是淡黄色，尾巴蓬松，穿着蓝色小背带裤，背带上有小花装饰，眉眼弯弯，笑容灿烂，喜欢前后跳跃，动作灵活。",
+      "image_url": "/static/images/7007557305249314040.png"
+    },
+    {
+      "text": "小兔子和小松鼠一起回到花园，开始画画和玩游戏。闪烁的阳光洒在他们身上，犹如温暖的拥抱。小兔子和小松鼠在一起，快乐地笑着，快乐的声音在花园中回荡。小兔子说：“有朋友真好！”",
+      "prompt": "In the sunny garden, a small white rabbit and a playful brown squirrel are joyfully painting and playing together, basking in the warm sunlight that feels like a cozy embrace. They are laughing happily, surrounded by vibrant flowers and gentle breeze, with their joyful sounds echoing in the garden. The rabbit says, 'Having a friend is wonderful!'",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小兔子: 雪白的毛，耳尖微微粉红，毛茸茸的，穿着彩色小围巾，眼睛圆圆的，满脸期待，活泼好动，时常蹦跳。\n小松鼠: 棕色的毛发，肚子是淡黄色，尾巴蓬松，穿着蓝色小背带裤，背带上有小花装饰，眉眼弯弯，笑容灿烂，喜欢前后跳跃，动作灵活。",
+      "image_url": "/static/images/-3542658339194806559.png"
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,32 @@
+{
+  "type": "final_result",
+  "title": "在一个遍地鲜花的阳光明媚的田野上",
+  "story": "### 故事：小兔子找朋友\n\n**场景一：阳光明媚的田野**  \n在一个遍地鲜花的阳光明媚的田野上，小兔子跳来跳去，耳朵竖得高高的，仿佛在寻找好朋友。“我想找个小伙伴，一起玩耍！”小兔子说。田野上有彩虹般的花朵，蝴蝶在空中翩翩起舞。\n\n**场景二：树林里的探险**  \n小兔子来到高大的树林里，树木高耸入云，阳光透过树叶洒下斑驳的光影。小兔子轻轻呼喊：“有没有小朋友在这里？”突然，树丛里跳出了一只小松鼠，它的眼睛闪闪发亮，笑着说：“我可以当你的朋友！”\n\n**场景三：快乐的游戏时光**  \n小兔子和小松鼠在绿草如茵的草地上一起玩起了追逐游戏。他们笑得如此开心，四周的小动物们也聚过来一起欢笑。这一刻，阳光照耀着他们的友情，幸福的笑声飘荡在空气中。\n\n---",
+  "scenes": [
+    {
+      "text": "在一个遍地鲜花的阳光明媚的田野上，小兔子跳来跳去，耳朵竖得高高的，仿佛在寻找好朋友。田野上有彩虹般的花朵，蝴蝶在空中翩翩起舞。",
+      "prompt": "A small, young white rabbit with pink inner ears and light gray spots, wearing a colorful ribbon on its ears, joyfully hopping in a sunny meadow filled with rainbow-colored flowers and butterflies flying around.",
+      "chinese_prompt": "一只娇小的雪白兔子，耳朵内侧为粉红色，身上有淡淡的灰色斑点，耳朵上绑着彩色丝带，开心地在阳光明媚的田野上跳跃，四周是五彩缤纷的花朵和翩翩起舞的蝴蝶。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小兔子: 基础外观为兔子，娇小年轻，主体颜色为雪白，耳朵内侧为粉红色，身上有淡淡的灰色斑点，耳朵上绑着彩色丝带，面带开心的笑容，表现出兴奋和开朗。",
+      "image_url": "/static/images/272674165559059821.png"
+    },
+    {
+      "text": "小兔子来到高大的树林里，树木高耸入云，阳光透过树叶洒下斑驳的光影。小兔子轻轻呼喊：“有没有小朋友在这里？”突然，树丛里跳出了一只小松鼠，它的眼睛闪闪发亮，笑着说：“我可以当你的朋友！”",
+      "prompt": "In a towering forest with tall trees reaching the clouds and dappled sunlight filtering through the leaves, a small white rabbit with pink inner ears is calling out for friends while a young, brown squirrel with a fluffy tail and a fruit necklace jumps out with sparkling eyes and a playful smile.",
+      "chinese_prompt": "在高大的树林里，树木高耸入云，阳光透过树叶洒下斑驳的光影，一只娇小的雪白兔子正在轻声呼喊寻找朋友，突然跳出一只棕色的小松鼠，它有蓬松的尾巴和一个小果实做的项链，眼睛闪烁，调皮地笑着说：“我可以当你的朋友！”",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小兔子: 基础外观为兔子，娇小年轻，主体颜色为雪白，耳朵内侧为粉红色，身上有淡淡的灰色斑点，耳朵上绑着彩色丝带，面带开心的笑容，表现出兴奋和开朗。\n小松鼠: 基础外观为松鼠，灵活年轻，主体颜色为棕色，肚子是浅米色，尾巴蓬松，脖子上挂着一个小果实做的项链，总是露出调皮的笑容，显得活泼好动。",
+      "image_url": "/static/images/7478049202989462294.png"
+    },
+    {
+      "text": "小兔子和小松鼠在绿草如茵的草地上一起玩起了追逐游戏，他们笑得如此开心，四周的小动物们也聚过来一起欢笑。这一刻，阳光照耀着他们的友情，幸福的笑声飘荡在空气中。",
+      "prompt": "On a lush green meadow, a small white rabbit and a young brown squirrel are playfully chasing each other, filled with joy and laughter, surrounded by other small animals joining in the fun under the warm sunlight that beautifully illuminates their friendship.",
+      "chinese_prompt": "在一片绿草如茵的草地上，一只雪白的小兔子和一只棕色的小松鼠正在开心地追逐玩耍，周围的小动物们也聚在一起欢笑，阳光洒下，照耀着他们的友情，幸福的笑声在空气中飘荡。",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "小兔子: 基础外观为兔子，娇小年轻，主体颜色为雪白，耳朵内侧为粉红色，身上有淡淡的灰色斑点，耳朵上绑着彩色丝带，面带开心的笑容，表现出兴奋和开朗。\n小松鼠: 基础外观为松鼠，灵活年轻，主体颜色为棕色，肚子是浅米色，尾巴蓬松，脖子上挂着一个小果实做的项链，总是露出调皮的笑容，显得活泼好动。",
+      "image_url": "/static/images/-7850808265941749281.png"
+    }
+  ],
+  "completed": true
+}

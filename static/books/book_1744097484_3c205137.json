@@ -1,0 +1,26 @@
+{
+  "type": "final_result",
+  "title": "在一个阳光明媚的早晨",
+  "story": "### 故事：《小兔子的冒险》\n\n**场景一：森林的早晨**  \n一个阳光明媚的早晨，小兔子跳出了温暖的兔窝。周围是高大的树木，五彩斑斓的花朵在微风中摇曳。小兔子对新鲜的空气感到兴奋，决定去冒险。然而当它玩得太开心，转身一看，身边的树木和花朵都变得陌生了，哦不！小兔子迷路了。\n\n**场景二：神秘的小溪**  \n小兔子四处寻找，发现了一条闪闪发光的小溪。溪水清澈见底，鱼儿在水中游来游去。小兔子试图用大耳朵听水声，想找到回家的路。然而，它只听到了轻轻的水声和鸟儿的歌唱，心里有些慌张。\n\n**场景三：友好的小松鼠**  \n正当小兔子感到孤单时，一只活泼的小松鼠跳了过来。小松鼠的毛发蓬松，眼睛亮晶晶的。它微笑着说：“别担心，我知道回家的路！”在小松鼠的带领下，小兔子又踏上了寻找家的旅程。回家的路虽然崎岖，但小松鼠的陪伴让它感到温暖和安心。\n\n---\n\n###",
+  "scenes": [
+    {
+      "text": "在一个阳光明媚的早晨，小兔子跳出了温暖的兔窝，周围是高大的树木和五彩斑斓的花朵。小兔子兴奋地在草地上蹦跳，享受着新鲜的空气。但当它玩得太开心、转身一看时，发现身边的景象变得陌生，它意识到自己迷路了。",
+      "prompt": "A bright and cheerful morning scene in a fairytale forest. A small, snow-white bunny with a soft red scarf with little white flowers, looking curious and lively while hopping in the lush green grass. Tall trees stand majestically in the background, and colorful flowers sway gently in the breeze. The light filters through the leaves, creating a warm and inviting atmosphere.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-1250190059278733129.png"
+    },
+    {
+      "text": "小兔子在周围四处寻找回家的路时，发现了一条闪闪发光的小溪。溪水清澈见底，鱼儿在水中游动。小兔子用大耳朵倾听水声，但心里却有些不安，只听到轻柔的水声和鸟儿的歌唱。",
+      "prompt": "A serene scene by a sparkling creek in the middle of the enchanting forest. The clear water of the creek reflects the sunlight, and colorful fish swim gracefully beneath the surface. The small, snow-white bunny with a red scarf is standing at the bank, listening intently with its large ears, looking a bit anxious while the gentle sound of water flows around, surrounded by lush greenery.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/1750714686307694142.png"
+    },
+    {
+      "text": "当小兔子感到孤单时，一只活泼的小松鼠跳了过来。小松鼠友好地微笑，它的毛发蓬松，眼睛闪闪发光。小松鼠告诉小兔子它知道回家的路，并开始带领小兔子寻找家。尽管路途崎岖，但小松鼠的陪伴让小兔子感到温暖和安慰。",
+      "prompt": "A heartwarming moment in the forest where a cheerful, lively squirrel with fluffy brown fur and a little leaf necklace jumps towards the small white bunny. The bunny, with a look of relief and joy on its face, is following the friendly squirrel. The background features a winding, slightly rugged path through trees and bushes, filled with warmth and friendship.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-9066280262913258966.png"
+    }
+  ],
+  "completed": true
+}

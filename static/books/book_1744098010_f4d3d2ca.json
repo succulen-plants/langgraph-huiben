@@ -1,0 +1,26 @@
+{
+  "type": "final_result",
+  "title": "在一个阳光明媚的早晨",
+  "story": "### 故事：小兔子的迷路冒险\n\n**场景一：森林的入口**  \n在一个阳光明媚的早晨，小兔子跳出温暖的兔窝，准备去探险。森林的入口满是五彩缤纷的花朵，蜜蜂在花间忙碌地飞舞，空气中弥漫着清新的草香。小兔子兴奋地在花丛中欢跳，却不小心走得太远，迷了路。\n\n**场景二：神秘的洞穴**  \n小兔子无助地望着四周，看见了一座神秘的洞穴，洞口被藤蔓环绕。洞内闪烁着奇异的光芒，像是星星在向它招手。小兔子鼓起勇气，慢慢走进去，发现里面是一个发光的水晶池，水面上漂浮着小小的彩色泡泡，显得格外神奇。\n\n**场景三：回家的路**  \n正当小兔子兴奋地看着水晶池的时候，一只聪明的小鸟飞了过来。小鸟柔声对小兔子说：“我可以带你回家！”小兔子开心地点点头，跟着小鸟飞过高高的树梢，直到重新回到熟悉的家。阳光在兔窝上洒下温暖的光辉，小兔子由衷地感到安心。\n\n---\n\n### 角色特征",
+  "scenes": [
+    {
+      "text": "在一个阳光明媚的早晨，小兔子跳出温暖的兔窝，准备去探险。森林的入口满是五彩缤纷的花朵，蜜蜂在花间忙碌地飞舞，空气中弥漫着清新的草香。小兔子兴奋地在花丛中欢跳，却不小心走得太远，迷了路。",
+      "prompt": "A sunny morning scene at the edge of a vibrant forest, filled with colorful flowers and buzzing bees. A small, cheerful white rabbit with a pink inner ear, wearing a bright red scarf, joyfully hops among the flowers, surrounded by a fresh green grass, radiating curiosity and excitement.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-8415804536871571635.png"
+    },
+    {
+      "text": "小兔子无助地望着四周，看见了一座神秘的洞穴，洞口被藤蔓环绕。洞内闪烁着奇异的光芒，像是星星在向它招手。小兔子鼓起勇气，慢慢走进去，发现里面是一个发光的水晶池，水面上漂浮着小小的彩色泡泡，显得格外神奇。",
+      "prompt": "A mysterious cave entrance enveloped in lush vines, emitting a mystical glow. Inside, a small white rabbit curiously ventures into the cave, his red scarf fluttering. The cave is illuminated by sparkling crystal waters, populated with colorful bubbles floating gently on the surface, creating an enchanting atmosphere.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/1158926996677694196.png"
+    },
+    {
+      "text": "正当小兔子兴奋地看着水晶池的时候，一只聪明的小鸟飞了过来。小鸟柔声对小兔子说：“我可以带你回家！”小兔子开心地点点头，跟着小鸟飞过高高的树梢，直到重新回到熟悉的家。阳光在兔窝上洒下温暖的光辉，小兔子由衷地感到安心。",
+      "prompt": "In a serene scene, a clever little bird flutters down toward the small white rabbit, softly offering to guide him home. They soar above tall trees bathed in warm sunlight, with a cozy rabbit burrow glowing beneath them. The rabbit, filled with joy, nods eagerly as they fly back, with a sense of safety and happiness enveloping the scene.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-1770987633450560255.png"
+    }
+  ],
+  "completed": true
+}

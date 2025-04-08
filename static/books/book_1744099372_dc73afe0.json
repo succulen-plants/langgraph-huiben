@@ -1,0 +1,26 @@
+{
+  "type": "final_result",
+  "title": "清晨",
+  "story": "### 故事：小兔子找朋友\n\n**场景一：阳光明媚的草地**  \n清晨，阳光洒在绿油油的草地上，花儿朝气蓬勃地开放，小兔子在草丛中跳跃。它的耳朵竖得高高的，眼睛闪闪发亮，想要找个朋友一起玩。“嘻嘻，我要去找朋友！”小兔子欢快地说。\n\n**场景二：宁静的小河边**  \n小兔子跑到小河边，看见小松鼠在树上忙碌。“松鼠哥哥，来和我一起玩吧！”小兔子叫道。微风轻轻拂过，河水叮咚作响，松鼠停下手中的活儿，摇着尾巴说：“好呀！我们一起捡松果吧！”\n\n**场景三：欢乐的树下**  \n小兔子和小松鼠在树下玩耍，地上满是五颜六色的松果。它们笑声不断，乐呵呵地扔松果，玩得可开心了。太阳开始西下，整个草地透着金色的光辉，小兔子说：“有朋友真好！”  \n\n---",
+  "scenes": [
+    {
+      "text": "清晨，阳光洒在绿油油的草地上，小兔子在草丛中跳跃，耳朵竖得高高，眼睛闪闪发亮。它兴奋地想要找朋友一起玩。",
+      "prompt": "A bright sunny morning on a green meadow, with colorful flowers blooming everywhere. A small, white rabbit with a blue scarf adorned with little stars is joyfully hopping around, its ears perked up and eyes sparkling with excitement. The atmosphere is cheerful and warm.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/4505735197000113923.png"
+    },
+    {
+      "text": "小兔子跑到小河边，看到小松鼠在树上忙碌，向它呼唤。松鼠停下手中的活，快乐地答应与小兔子一起玩。",
+      "prompt": "At a peaceful riverside, a playful scene unfolds. The small white rabbit calls out to a medium-sized brown squirrel with a light-colored belly and striped tail, who is busy on a tree. The river sparkles as it flows gently, and a light breeze sways the branches. The squirrel, with a friendly smile, is ready to join the rabbit in playful activities.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-7911669844958431013.png"
+    },
+    {
+      "text": "小兔子和小松鼠在树下快乐地玩耍，四周满是五颜六色的松果。它们欢笑声不断，玩得特别开心，夕阳的余晖洒在地面上，显得金灿灿的。",
+      "prompt": "Under a large tree, the joyful scene continues as the small white rabbit and the friendly brown squirrel play together, surrounded by colorful pine cones on the ground. Their laughter fills the air as the sun begins to set, casting a golden glow over the entire meadow, creating a magical and serene atmosphere. They are happily tossing pine cones at each other.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/3325340680372156600.png"
+    }
+  ],
+  "completed": true
+}

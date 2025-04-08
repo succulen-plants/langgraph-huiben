@@ -1,0 +1,26 @@
+{
+  "type": "final_result",
+  "title": "In a beaut",
+  "story": "### 故事：兔子迷路\n\n#### 场景一：美丽的森林\n在一个阳光明媚的早晨，小兔子皮皮在茂密的森林里跳跃。鸟儿在树梢上欢唱，微风轻轻吹拂，树叶沙沙作响。皮皮一边采集五颜六色的花朵，一边开心地唱着歌。然而，皮皮突然发现自己迷路了，四周都是高大的树木和茂密的灌木，熟悉的小路不见了。\n\n#### 场景二：神奇的蘑菇田\n皮皮走着走着，碰到了一个神奇的蘑菇田。形状各异的蘑菇像小伞一样撑开，颜色从粉红到亮黄色，五光十色。皮皮好奇地凑过去，看到一只小松鼠正在认真地研究蘑菇。小松鼠友好地挥了挥手，问：“需要帮忙吗？”皮皮点点头，心里觉得暖暖的。\n\n#### 场景三：找到方向的家\n小松鼠带着皮皮一路跳腾，终于找到了熟悉的小路。路旁阳光洒在草地上，花儿在微风中摇摆。皮皮的脸上露出了灿烂的笑容，激动地说：“谢谢你，小松鼠！我终于可以回家了！”小松鼠也笑了，两个朋友在阳光下欢快地说再见。\n\n---",
+  "scenes": [
+    {
+      "text": "In a beautiful forest on a sunny morning, little rabbit Pipi is happily hopping among the dense trees, gathering colorful flowers while singing a cheerful song. Suddenly, Pipi realizes he is lost, surrounded by tall trees and thick bushes without a familiar path in sight.",
+      "prompt": "A sunny morning in a vibrant, lush forest filled with tall trees and thick bushes. Little Pipi the Rabbit, who is white with pale pink ears and nose, is joyfully jumping around. He is gathering colorful flowers and has a little red ribbon around his neck. The atmosphere is cheerful and enchanting, with bright sunlight filtering through the leaves, creating dappled light on the forest floor. Various colorful flowers bloom around him, and the sound of birds singing can be imagined.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-2133562251706183037.png"
+    },
+    {
+      "text": "While wandering through the forest, Pipi comes across a magical mushroom field. The mushrooms are of different shapes and colors, resembling little umbrellas. Among them, Pipi sees a cute squirrel studying mushrooms, who waves and asks if Pipi needs help. Pipi nods, feeling warm inside.",
+      "prompt": "A magical mushroom field filled with various uniquely shaped mushrooms that look like colorful umbrellas in shades of pink, yellow, and orange. Little Pipi the Rabbit, wide-eyed with curiosity, stands among the mushrooms. Nearby, a small brown squirrel with a fluffy tail and a tiny white flower on its head studies the mushrooms attentively. The atmosphere is whimsical and friendly, with soft sunlight illuminating the vibrant scene, while Pipi and the squirrel share a warm interaction.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-6098740808128407763.png"
+    },
+    {
+      "text": "With the help of the friendly squirrel, Pipi finally finds the familiar path home. Sunlight spills onto the grass, and flowers sway gently in the breeze. Pipi beams with joy, exclaiming, 'Thank you, Squirrel! I can finally go home!' The squirrel smiles back as they wave goodbye under the bright sun.",
+      "prompt": "A sunlit grassy path lined with blooming flowers swaying in the gentle breeze. Radiant Pipi the Rabbit, filled with joy, stands with a big smile, exclaiming his gratitude. The small brown squirrel stands beside him, looking happy and friendly. The scene is warm and bright, capturing the essence of friendship and relief as they wave goodbye, surrounded by the beauty of nature.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/350004513946443865.png"
+    }
+  ],
+  "completed": true
+}

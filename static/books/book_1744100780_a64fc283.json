@@ -1,0 +1,29 @@
+{
+  "type": "final_result",
+  "title": "在一片阳光明媚的草地上",
+  "story": "### 故事：小羊的山洞冒险\n\n**场景一：阳光明媚的草地**  \n在一片阳光明媚的草地上，小羊嘟嘟在花草间嬉戏。绿油油的草地上点缀着五彩缤纷的小花，蜜蜂忙忙碌碌地在花间穿梭。嘟嘟快乐地跳跃着，突然发现了一条通往山洞的小路。好奇的嘟嘟决定一探究竟。\n\n**场景二：神秘的山洞**  \n当嘟嘟走进山洞时，洞内漆黑一片，只有从缝隙中洒下的微弱光芒。墙壁上闪烁着奇幻的石头，像星星一样美丽。嘟嘟小心翼翼地走着，四周回荡着轻轻的滴水声。忽然，一阵风吹过，洞里的空气变得凉爽而神秘，嘟嘟的心跳开始加速。\n\n**场景三：友好的洞穴居民**  \n就在嘟嘟感到害怕时，他遇见了一只小兔子和一只小鸟。小兔子穿着一件红色的小背带，正好奇地看着他；小鸟在枝头欢快地唱着歌。“别怕，我们是你的朋友！”小兔子说。嘟嘟感到安心，和他们一起在洞里欢快地玩耍，直到太阳落山，才开心地一起走出了山洞，踏上回家的路。\n\n---",
+  "scenes": [
+    {
+      "text": "在一片阳光明媚的草地上，小羊嘟嘟在花草间嬉戏。绿油油的草地上点缀着五彩缤纷的小花，蜜蜂忙忙碌碌地在花间穿梭。嘟嘟快乐地跳跃着，突然发现了一条通往山洞的小路。",
+      "prompt": "3D style, fairy tale style, cute and warm, a small white and light gray lamb named Dudu joyfully jumping and playing on a sunny green meadow filled with colorful flowers. Bees are busy buzzing around the flowers, creating a lively atmosphere. Bright sunlight casts warm shadows on the grass.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "嘟嘟: 小羊，体型小巧，白色，浅灰色，波浪纹，毛茸茸的外观，带着天真无邪的微笑，活泼地跳跃和转圈。",
+      "image_url": "/static/images/4616516122271138588.png"
+    },
+    {
+      "text": "当嘟嘟走进山洞时，洞内漆黑一片，只有从缝隙中洒下的微弱光芒。墙壁上闪烁着奇幻的石头，像星星一样美丽。嘟嘟小心翼翼地走着，四周回荡着轻轻的滴水声。",
+      "prompt": "3D style, fairy tale style, cute and warm, Dudu the lamb entering a dark cave with only faint light shining through cracks. The walls of the cave are adorned with shimmering fantasy stones that resemble stars, creating a mystical atmosphere. Dudu is cautiously walking, his eyes wide with wonder as soft water dripping sounds echo around.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "嘟嘟: 小羊，体型小巧，白色，浅灰色，波浪纹，毛茸茸的外观，带着一丝紧张感，眼神充满好奇。",
+      "image_url": "/static/images/6836152142430014268.png"
+    },
+    {
+      "text": "就在嘟嘟感到害怕时，他遇见了一只小兔子和一只小鸟。小兔子穿着一件红色的小背带，正好奇地看着他；小鸟在枝头欢快地唱着歌。嘟嘟感到安心，和他们一起在洞里欢快地玩耍。",
+      "prompt": "3D style, fairy tale style, cute and warm, Dudu the lamb meeting a friendly little rabbit wearing a red suspenders and a blue bow tie, and a cheerful little yellow bird singing on a branch. The cave is now filled with a warm glow as they play together, making the environment feel cozy and welcoming.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "character_features": "嘟嘟: 小羊，体型小巧，白色，浅灰色，波浪纹，毛茸茸，带着开心的微笑。小兔子: 棕色，白色斑点，红色小背带，蓝色蝴蝶结，友好的表情，喜欢跳跃。小鸟: 亮黄色，黑色斑点，动作活泼，快乐地唱歌。",
+      "image_url": "/static/images/9172620600733071541.png"
+    }
+  ],
+  "completed": true
+}

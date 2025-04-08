@@ -1,0 +1,26 @@
+{
+  "type": "final_result",
+  "title": "在阳光明媚的早晨",
+  "story": "### 故事：兔子迷路\n\n**场景一：森林的早晨**  \n在阳光明媚的早晨，森林里充满了鸟儿的歌唱和微风的轻柔。在高大的树木之间，一只小兔子叫小白，正开心地跳跃。小白的耳朵特别长，额头上的小黑点让它显得更加可爱。它一边吃着鲜嫩的草，一边幻想着探险。小白决定去找湖边的新鲜胡萝卜，于是它兴奋地向森林深处跑去。\n\n**场景二：迷失的时刻**  \n小白在森林中跳来跳去，花香扑鼻，但它突然发现四周变得陌生。高大的树木像巨人一样围住了它。小白的心情变得有些害怕，眼睛睁得大大的，四处张望，希望能看到熟悉的路标。它听到溪水潺潺的声音，决定跟着声音走，心里默念着：“不要害怕，一定能找到路。”\n\n**场景三：友谊的力量**  \n就在小白感到迷茫的时候，出现了一只温暖的松鼠，名叫小松。小松微笑着说：“小兔子，你怎么了？”小白哭泣着说：“我迷路了！”小松拍拍小白的背，鼓励地说：“我带你回家！”在小松的带领下，他们一起穿过森林，呼吸着新鲜的空气，最后找到了小白熟悉的小路。小白开心地跳舞，感谢小松的帮助，心里充满了温暖。\n\n---\n\n### 角色特征",
+  "scenes": [
+    {
+      "text": "在阳光明媚的早晨，森林里充满了鸟儿的歌唱和微风的轻柔。一只小兔子叫小白，正开心地跳跃，耳朵特别长，额头有个小黑点，显得更加可爱。小白一边吃着鲜嫩的草，一边幻想着探险，决定去找湖边的新鲜胡萝卜，兴奋地向森林深处跑去。",
+      "prompt": "A bright and sunny forest morning filled with singing birds and gentle breeze. A small, cute white rabbit named Xiao Bai is joyfully hopping around. The rabbit has long ears and a small black dot on its forehead. It is nibbling on fresh grass while daydreaming about adventure. The atmosphere is cheerful and lively, with towering trees and colorful flowers surrounding Xiao Bai.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-5142843548529125713.png"
+    },
+    {
+      "text": "小白在森林中跳来跳去，花香扑鼻，但突然发现自己迷失了方向。高大的树木像巨人一样围住了它，心情变得有些害怕。小白的眼睛睁得大大的，四处张望，希望能看到熟悉的路标，听到溪水潺潺的声音，决定跟着声音走，心里默念着：“不要害怕，一定能找到路。”",
+      "prompt": "In a forest filled with fragrant flowers, Xiao Bai the rabbit jumps around but suddenly realizes that it is lost. The towering trees loom like giants, making Xiao Bai feel scared and small. Its big eyes look around anxiously for familiar signs. The atmosphere turns tense as Xiao Bai hears the soothing sound of a nearby stream and resolves to follow it, reassuring itself with thoughts of finding the way home.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/-7586758262798691063.png"
+    },
+    {
+      "text": "就在小白感到迷茫的时候，出现了一只温暖的松鼠，名叫小松。小松笑着问：“小兔子，你怎么了？”小白哭泣地说：“我迷路了！”小松拍拍小白的背，鼓励地说：“我带你回家！”在小松的带领下，他们一起穿过森林，呼吸着新鲜的空气，最后找到了小白熟悉的小路。小白开心地跳舞，感谢小松的帮助，心里充满了温暖。",
+      "prompt": "As Xiao Bai feels lost and confused, a friendly squirrel named Xiao Song appears, smiling warmly. Xiao Song asks, 'What's wrong, little rabbit?' Sobbing, Xiao Bai replies, 'I’m lost!' Xiao Song gently pats Xiao Bai's back, reassuringly saying, 'I’ll help you find your way home!' Together, they navigate through the beautiful forest, breathing in the fresh air. At last, they find the familiar path, and Xiao Bai dances joyfully, filled with gratitude and warmth for Xiao Song's friendship.",
+      "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
+      "image_url": "/static/images/4228014037723235911.png"
+    }
+  ],
+  "completed": true
+}
