@@ -57,6 +57,8 @@ secrets.json
 credentials.json
 token.json 
 static/images/
+static/books/
 
 产品说明.md
 *.md 
+
