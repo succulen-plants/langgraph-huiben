@@ -6,8 +6,8 @@ from typing import List, Dict
 
 class StorybookGenerator:
     def __init__(self):
-        self.dashscope_api_key = os.getenv("TONGYI_API_KEY", "sk-a28b2fd89f824e96a7cc1e02cd48b88e")
-        self.openai_api_key = os.getenv("OPENAI_API_KEY", "sk-RUYMa4nzjcQHBvVmPgYvsYR3A9Nd6OwRgtK1nRqCvFfOUusn")
+        self.dashscope_api_key = 'sk-**'
+        self.openai_api_key = os.getenv("OPENAI_API_KEY", "sk-R**")
         self.openai_base_url = os.getenv("OPENAI_BASE_URL", "https://api.chatanywhere.tech/v1")
         
     def generate_story(self, outline: str) -> str:

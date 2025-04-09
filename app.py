@@ -7,6 +7,7 @@ import threading
 from queue import Queue
 from datetime import datetime, timedelta
 import secrets
+import time
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key-replace-in-production'  # 在生产环境中替换为安全的密钥
@@ -153,6 +154,9 @@ def generate_book():
                         # 使用时间戳和随机数生成唯一的 book_id
                         book_id = f"{int(datetime.now().timestamp())}_{secrets.token_hex(4)}"
                         book_path = os.path.join(BOOKS_DIR, f"book_{book_id}.json")
+                        print('=====book_path==',book_path)
+                        print('=====state==',state)
+
                         with open(book_path, 'w', encoding='utf-8') as f:
                             json.dump(state, f, ensure_ascii=False, indent=2)
                         state['book_id'] = book_id
@@ -163,6 +167,9 @@ def generate_book():
                 print(f"Generate error: {e}")
                 yield f"event: error\ndata: {json.dumps({'error': str(e)})}\n\n"
             finally:
+                # 等待一定时间，确保前端有足够时间加载图片
+                time.sleep(3)  # 给前端3秒时间加载图片
+                
                 # 清理会话状态
                 workflow_state.sessions[session_id] = None
                 while not workflow_state.review_queues[session_id].empty():

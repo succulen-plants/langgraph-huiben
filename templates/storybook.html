@@ -5,6 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .book-container {
+            max-width: 800px;
+            min-height: 100vh;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            padding-bottom: 60px; /* 减小底部间距 */
+            box-sizing: border-box;
+        }
+
+        .page {
+            display: none;
+            position: relative; /* 添加相对定位 */
+            padding-bottom: 60px; /* 为页码和导航留出空间 */
+        }
+
+        .cover {
+            text-align: center;
+            padding: 20px;
+            min-height: calc(100vh - 140px); /* 减去padding和navigation的高度 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cover h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .cover-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 100%;
+            max-height: 70vh;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .cover-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .page-content {
+            min-height: calc(100vh - 200px); /* 调整最小高度 */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .story-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 300px;
+            max-height: 60vh;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+        }
+
+        .story-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .story-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-top: auto; /* 将文本推到图片下方 */
+        }
+
+        .page-number {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            padding: 10px 0;
+            margin-top: 20px; /* 增加与上方内容的间距 */
+        }
+
+        .navigation {
+            position: relative; /* 改为相对定位 */
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            margin-top: 20px; /* 增加与上方内容的间距 */
+        }
+
+        .navigation button {
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navigation button:hover {
+            background-color: #45a049;
+        }
+
+        .navigation button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        /* 响应式设计调整 */
+        @media (max-width: 600px) {
+            .book-container {
+                padding: 10px;
+                padding-bottom: 50px;
+            }
+
+            .page {
+                padding-bottom: 50px;
+            }
+
+            .page-content {
+                min-height: calc(100vh - 180px);
+            }
+
+            .navigation {
+                padding: 10px;
+                margin-top: 15px;
+            }
+
+            .cover h1 {
+                font-size: 20px;
+            }
+
+            .story-text {
+                font-size: 14px;
+                padding: 15px;
+            }
+
+            .navigation button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .story-image {
+                min-height: 200px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="book-container">
@@ -26,8 +205,8 @@
                 <div class="story-text">
                     {{ scene.text }}
                 </div>
+                <div class="page-number">{{ loop.index }}/{{ scenes|length }}</div>
             </div>
-            <div class="page-number">{{ loop.index }}/{{ scenes|length }}</div>
         </div>
         {% endfor %}
 
@@ -49,6 +228,9 @@
             // 更新按钮状态
             document.getElementById('prev-btn').disabled = index === 0;
             document.getElementById('next-btn').disabled = index === pages.length - 1;
+
+            // 滚动到页面顶部
+            window.scrollTo(0, 0);
         }
         
         function nextPage() {
@@ -67,6 +249,15 @@
         
         // 初始显示封面
         showPage(0);
+
+        // 添加键盘导航支持
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextPage();
+            } else if (e.key === 'ArrowLeft') {
+                prevPage();
+            }
+        });
     </script>
 </body>
 </html> 

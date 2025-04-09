@@ -202,7 +202,7 @@ def split_scenes(state: StoryState) -> StoryState:
     分析以下儿童故事，并完成这些任务:
     1. 将故事分成3个关键场景（如果场景不足3个，请合理划分）
     2. 为每个场景提取关键角色
-    3. 为每个场景生成详细的图像提示词，确保包含角色特征
+    3. 为每个场景生成详细的图像提示词
     4：使用中文描述
     
     按以下JSON格式返回结果:
@@ -227,13 +227,11 @@ def split_scenes(state: StoryState) -> StoryState:
     {character_features}
     
     图像提示词要求:
-    - 风格要求：必须使用3D风格，童话风格，可爱温馨
+    - 使用童话风格，可爱温馨的描述
     - 包含场景中的主要角色及其动作
     - 描述环境、氛围和关键元素
     - 提示词应该足够详细，便于图像生成
     - 使用英文描述
-    - 确保在提示词中包含角色的外观特征，如颜色、服装、表情等
-    - 每个提示词必须以"3D style, fairy tale style, cute and warm"开头
     """
     
     try:
@@ -254,26 +252,10 @@ def split_scenes(state: StoryState) -> StoryState:
         
         # 更新场景列表
         for scene_data in result.get("scenes", []):
-            # 获取场景中的角色特征
-            scene_character_features = scene_data.get("character_features", "")
-            
-            # 如果没有场景特定的角色特征，使用全局角色特征
-            if not scene_character_features:
-                scene_character_features = character_features
-            
-            # 获取图像提示词
-            image_prompt = scene_data.get("image_prompt", "")
-            
-            # 确保提示词包含风格要求
-            if not image_prompt.startswith("3D style"):
-                image_prompt = f"3D style, fairy tale style, cute and warm, {image_prompt}"
-            
-            # 创建场景对象，包含角色特征
             scene = {
                 "text": scene_data.get("text", ""),
-                "prompt": image_prompt,
-                "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形",
-                "character_features": scene_character_features  # 添加角色特征到场景中
+                "prompt": scene_data.get("image_prompt", "童话风格的插图，可爱温馨"),
+                "negative_prompt": "人物，黑暗，恐怖，写实风格，与主要人物特征不符的任何形象，低质量，模糊，变形"
             }
             state['scenes'].append(scene)
         
@@ -292,9 +274,8 @@ def split_scenes(state: StoryState) -> StoryState:
         for paragraph in paragraphs:
             scene = {
                 "text": paragraph,
-                "prompt": f"3D style, fairy tale style, cute and warm, {paragraph}",
-                "negative_prompt": "人物，黑暗，恐怖，写实风格，低质量，模糊，变形",
-                "character_features": character_features  # 添加全局角色特征
+                "prompt": f"童话风格的插图，可爱温馨，{paragraph}",
+                "negative_prompt": "人物，黑暗，恐怖，写实风格，低质量，模糊，变形"
             }
             state['scenes'].append(scene)
             
@@ -337,7 +318,8 @@ def generate_images(state: StoryState) -> StoryState:
     else:
         print(f"下一个场景索引: {state['current_scene_index']}")
         state['completed'] = False
-    
+    # print('state====场景信息：',state)
+    print('state====场景信息：',scene['image_url'])
     return state
 
 # 添加人工审核工具
@@ -562,6 +544,7 @@ def run_story_workflow(outline: str, streaming: bool = False, review_queue=None)
                 
                 # 调试信息
                 print(f"场景 {state['current_scene_index']}/{scene_count} 处理完成, 已处理 {processed_scene_count}/{scene_count}")
+                # print(f"场景 {state['scenes'][state['current_scene_index'] - 1]['image_url']}")
             
             # 确保完成状态正确设置
             state['completed'] = True

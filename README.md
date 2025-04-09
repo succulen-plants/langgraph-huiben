@@ -80,3 +80,5 @@ python app.py
 ## 许可证
 
 MIT 
+
+curl -X POST https://dashscope.aliyuncs.com/api/v1/services/aigc/text2image/image-synthesis -H 'X-DashScope-Async: enable' -H "Authorization: Bearer sk-8098a8c255dd4031a4214aecf59db400" -H 'Content-Type: application/json' -d '{"model": "wanx2.1-t2i-turbo", "input": {"prompt": "一间有着精致窗户的花店，漂亮的木质门，摆放着花朵"}, "parameters": {"size": "1024*1024", "n": 1}}'  
